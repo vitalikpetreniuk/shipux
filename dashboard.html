@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shipux - Dashboard</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.formstyler.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+</head>
+<body>
+
+	<div id="wrapper" class="dashboard">
+		<header>
+			<div class="container">
+				<div class="header-top">
+					<div class="header-calc">
+						<a href="#">Калькулятор доставки</a>
+					</div>
+					<div class="header-help">
+						<a href="help.html">Помощь в покупке</a>
+					</div>
+					<div class="header-lang">
+						<span class="lang">Ru</span><span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+						<ul>
+							<li>Ua</li>
+							<li>Ru</li>
+							<li>En</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-bottom row">
+					<div class="col-lg-2 col-md-2 col-sm-3 shipux-logo">
+						<a href="/"><img src="img/shipux_logo_yellow.svg" alt="logo"></a>
+					</div>
+					<div class="col-lg-10 col-md-10 col-sm-9 shipux-right">
+						<div class="shipux-login">
+							<div class="shipux-notifications">
+								<i class="fa fa-bell" aria-hidden="true"></i>
+								<span class="note_qua">10</span>
+								<div class="notifications-drop">
+									<i class="fa fa-caret-up"></i>
+									<div class="nd-header">
+										<span class="notif-qua">Получено (10)</span>
+										<a href="#">Mark All Read</a>
+									</div>
+									<div class="nd-body">
+										<ul>
+											<li>
+												<span class="condition"><img src="img/parcel-okay.png" alt="okay"></span>
+												<span class="info">
+													<span class="title">
+														<span>IL215-000001</span> посылка получена:<br>
+														<span><span class="con">Посылка в порядке</span> / <span class="pack">коробка целая</span></span>
+													</span>
+													<a href="#" class="watch">Смотреть</a>
+													<a href="#" class="details">детали посылки</a>
+												</span>
+											</li>
+											<li class="read">
+												<span class="condition"><img src="img/parcel-mistake.png" alt="damaged"></span>
+												<span class="info">
+													<span class="title">
+														<span>IL215-000001</span> посылка получена:<br>
+														<span><span class="con damaged">Товар поцарапанный</span> / <span class="pack">коробка целая</span></span>
+													</span>
+													<a href="#" class="watch">Смотреть</a>
+													<a href="#" class="details">детали посылки</a>
+												</span>
+											</li>
+										</ul>
+										<span class="watch-all"><a href="#">Смотреть все уведомления</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="shipux-acc">
+								<div class="acc-avatar">
+									<img src="img/avatar.png" alt="avatar">
+								</div>
+								<div class="acc-name">Julia Lightenberg <i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+								<div class="acc-drop">
+									<ul>
+										<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Тикеты</a></li>
+										<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Настройки аккаунта</a></li>
+										<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Партнёрская программа</a></li>
+										<li class="quit"><a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> Выход</a></li>
+									</ul>
+									<div class="balance"><span><span>Баланс:</span> $718.00 <i class="fa fa-credit-card-alt" aria-hidden="true"></i></span></div>
+								</div>
+							</div>
+						</div>
+						<ul class="shipux-nav">
+							<li><a href="#">Посылки на складе</a></li>
+							<li><a href="process.html">Отправленные посылки</a></li>
+							<li><a href="#">Ожидаемые посылки</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="dashboard-top">
+			<div class="container">
+				<div class="top-left">
+					<div class="dash-avatar">
+						<div class="avatar">
+							<img src="img/avatar.png" alt="avatar">
+						</div>
+					</div>
+					<div class="dash-name">Julia Lightenberg</div>
+					<div class="dash-status">Free user</div>
+				</div>
+				<div class="top-center">
+					<div class="surename">
+						<span>surname</span>
+						<span>Lightman</span>
+					</div>
+					<div class="name">
+						<span>name</span>
+						<span>Julia</span>
+					</div>
+					<div class="address">
+						<span>address line</span>
+						<span>27 Merry Lane,  <br>NP0089293211</span>
+					</div>
+					<div class="phone">
+						<span>phone</span>
+						<span>+38 (068) 26 11295</span>
+					</div>
+					<div class="email">
+						<span>email</span>
+						<span>Julialightman@gmail.com</span>
+					</div>
+					<div class="state">
+						<span>state</span>
+						<span>New Jersey</span>
+					</div>
+					<p>Now that you have a ShipUx address, you can use that address to shop on almost any site. Just use your address  during checkout and we'll let you know when your items arrive at the warehouse.</p>
+				</div>
+				<div class="top-right">
+					<div class="address-button button">добавить адрес</div>
+					<div class="settings-button button">настроить аккаунт</div>
+					<div class="wallet-button button">пополнить счёт</div>
+				</div>
+			</div>
+		</div>
+		<div class="dashboard-tabs">
+			<div id="dash-tabs">
+				<div class="tabs-header">
+					<div class="container">
+						<ul>
+							<li><a href="#stock">На складе в США</a></li>
+							<li><a href="#sent">Отправленные посылки</a></li>
+							<li><a href="#expected">Ожидаемые посылки</a></li>
+						</ul>
+						<select name="period" id="period">
+							<option value="за сегодня">за сегодня</option>
+							<option value="за 3 дня">за 3 дня</option>
+							<option value="за неделю">за неделю</option>
+							<option value="за месяц">за месяц</option>
+						</select>
+					</div>
+				</div>
+				<div id="stock">
+					<div class="container">
+						<div class="stock-body">
+							<div class="table-header">
+								<div class="th-check"></div>
+								<div class="th-number"># Декларации</div>
+								<div class="th-shipping">Прибытие / Отправка</div>
+								<div class="th-storage">Бесплатное хранение, дней</div>
+								<div class="th-size">Размер, см</div>
+								<div class="th-weight">Вес, кг</div>
+								<div class="th-price">Сумма</div>
+								<div class="th-status">Статус</div>
+							</div>
+							<div class="table-body">
+								<form action="/">
+									<div class="line">
+										<div class="line-header">
+											<div class="check"><input type="checkbox"></div>
+											<div class="number">
+												<span class="title">IL215-000001</span>
+												<span class="site">Amazon.com, N/A</span>
+												<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+											</div>
+											<div class="shipping">
+												<span>Апр. 24, 2017 ~ 5:21 PM</span>
+												<span>Апр. 25, 2017 ~ 9:20 AM</span>
+											</div>
+											<div class="storage">
+												<span>21</span>
+											</div>
+											<div class="size">
+												<span>127(д) x 23(в) x 56(ш)</span>
+											</div>
+											<div class="weight">
+												<span>1,4кг</span>
+											</div>
+											<div class="price">
+												<span>$ 431.67</span>
+											</div>
+											<div class="status okay">Посылка в порядке</div>
+											<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+										</div>
+										<div class="line-body">
+											<div class="line-photo">
+												<div class="photo-gal"><a href="#">Смотреть фотоотчёт (5 фото)</a></div>
+												<div class="add-photo">
+													<span>Заказать еще 10 фото:<span>+ $2.00</span></span>
+													<span class="card"><img src="img/parcel-card.png" alt=""></span>
+												</div>
+												<ul class="gallery">
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+												</ul>
+											</div>
+											<div class="line-footer">
+												<div class="repack">
+													<div class="check">
+														<input id="repack" type="checkbox">
+														<label for="repack">Переупаковать посылку (%1.25)</label>
+													</div>
+												</div>
+												<div class="foo-right">
+													<a href="#" class="history">История о посылке</a>
+													<button class="send">Отправить посылку</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="check"><input type="checkbox"></div>
+											<div class="number">
+												<span class="title">IL215-000001</span>
+												<span class="site">Amazon.com, N/A</span>
+												<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+											</div>
+											<div class="shipping">
+												<span>Апр. 24, 2017 ~ 5:21 PM</span>
+												<span>Апр. 25, 2017 ~ 9:20 AM</span>
+											</div>
+											<div class="storage">
+												<span>21</span>
+											</div>
+											<div class="size">
+												<span>127(д) x 23(в) x 56(ш)</span>
+											</div>
+											<div class="weight">
+												<span>1,4кг</span>
+											</div>
+											<div class="price">
+												<span>$ 431.67</span>
+											</div>
+											<div class="status damaged">Посылка повреждена</div>
+											<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+										</div>
+										<div class="line-body">
+											<div class="line-photo">
+												<div class="photo-gal"><a href="#">Смотреть фотоотчёт (5 фото)</a></div>
+												<div class="add-photo">
+													<span>Заказать еще 10 фото:<span>+ $2.00</span></span>
+													<span class="card"><img src="img/parcel-card.png" alt=""></span>
+												</div>
+												<ul class="gallery">
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+												</ul>
+											</div>
+											<div class="line-footer">
+												<div class="repack">
+													<div class="check">
+														<input id="repack" type="checkbox">
+														<label for="repack">Переупаковать посылку (%1.25)</label>
+													</div>
+												</div>
+												<div class="foo-right">
+													<a href="#" class="history">История о посылке</a>
+													<button class="send">Отправить посылку</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="check"><input type="checkbox"></div>
+											<div class="number">
+												<span class="title">IL215-000001</span>
+												<span class="site">Amazon.com, N/A</span>
+												<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+											</div>
+											<div class="shipping">
+												<span>Апр. 24, 2017 ~ 5:21 PM</span>
+												<span>Апр. 25, 2017 ~ 9:20 AM</span>
+											</div>
+											<div class="storage">
+												<span>21</span>
+											</div>
+											<div class="size">
+												<span>127(д) x 23(в) x 56(ш)</span>
+											</div>
+											<div class="weight">
+												<span>1,4кг</span>
+											</div>
+											<div class="price">
+												<span>$ 431.67</span>
+											</div>
+											<div class="status pack-damaged">Упаковка повреждена</div>
+											<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+										</div>
+										<div class="line-body">
+											<div class="line-photo">
+												<div class="photo-gal"><a href="#">Смотреть фотоотчёт (5 фото)</a></div>
+												<div class="add-photo">
+													<span>Заказать еще 10 фото:<span>+ $2.00</span></span>
+													<span class="card"><img src="img/parcel-card.png" alt=""></span>
+												</div>
+												<ul class="gallery">
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+												</ul>
+											</div>
+											<div class="line-footer">
+												<div class="repack">
+													<div class="check">
+														<input id="repack" type="checkbox">
+														<label for="repack">Переупаковать посылку (%1.25)</label>
+													</div>
+												</div>
+												<div class="foo-right">
+													<a href="#" class="history">История о посылке</a>
+													<button class="send">Отправить посылку</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="check"><input type="checkbox"></div>
+											<div class="number">
+												<span class="title">IL215-000001</span>
+												<span class="site">Amazon.com, N/A</span>
+												<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+											</div>
+											<div class="shipping">
+												<span>Апр. 24, 2017 ~ 5:21 PM</span>
+												<span>Апр. 25, 2017 ~ 9:20 AM</span>
+											</div>
+											<div class="storage">
+												<span>21</span>
+											</div>
+											<div class="size">
+												<span>127(д) x 23(в) x 56(ш)</span>
+											</div>
+											<div class="weight">
+												<span>1,4кг</span>
+											</div>
+											<div class="price">
+												<span>$ 431.67</span>
+											</div>
+											<div class="status okay">Посылка в порядке</div>
+											<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+										</div>
+										<div class="line-body">
+											<div class="line-photo">
+												<div class="photo-gal"><a href="#">Смотреть фотоотчёт (5 фото)</a></div>
+												<div class="add-photo">
+													<span>Заказать еще 10 фото:<span>+ $2.00</span></span>
+													<span class="card"><img src="img/parcel-card.png" alt=""></span>
+												</div>
+												<ul class="gallery">
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+												</ul>
+											</div>
+											<div class="line-footer">
+												<div class="repack">
+													<div class="check">
+														<input id="repack" type="checkbox">
+														<label for="repack">Переупаковать посылку (%1.25)</label>
+													</div>
+												</div>
+												<div class="foo-right">
+													<a href="#" class="history">История о посылке</a>
+													<button class="send">Отправить посылку</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="check"><input type="checkbox"></div>
+											<div class="number">
+												<span class="title">IL215-000001</span>
+												<span class="site">Amazon.com, N/A</span>
+												<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+											</div>
+											<div class="shipping">
+												<span>Апр. 24, 2017 ~ 5:21 PM</span>
+												<span>Апр. 25, 2017 ~ 9:20 AM</span>
+											</div>
+											<div class="storage">
+												<span>21</span>
+											</div>
+											<div class="size">
+												<span>127(д) x 23(в) x 56(ш)</span>
+											</div>
+											<div class="weight">
+												<span>1,4кг</span>
+											</div>
+											<div class="price">
+												<span>$ 431.67</span>
+											</div>
+											<div class="status okay">Посылка в порядке</div>
+											<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+										</div>
+										<div class="line-body">
+											<div class="line-photo">
+												<div class="photo-gal"><a href="#">Смотреть фотоотчёт (5 фото)</a></div>
+												<div class="add-photo">
+													<span>Заказать еще 10 фото:<span>+ $2.00</span></span>
+													<span class="card"><img src="img/parcel-card.png" alt=""></span>
+												</div>
+												<ul class="gallery">
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+												</ul>
+											</div>
+											<div class="line-footer">
+												<div class="repack">
+													<div class="check">
+														<input id="repack" type="checkbox">
+														<label for="repack">Переупаковать посылку (%1.25)</label>
+													</div>
+												</div>
+												<div class="foo-right">
+													<a href="#" class="history">История о посылке</a>
+													<button class="send">Отправить посылку</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="check"><input type="checkbox"></div>
+											<div class="number">
+												<span class="title">IL215-000001</span>
+												<span class="site">Amazon.com, N/A</span>
+												<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+											</div>
+											<div class="shipping">
+												<span>Апр. 24, 2017 ~ 5:21 PM</span>
+												<span>Апр. 25, 2017 ~ 9:20 AM</span>
+											</div>
+											<div class="storage">
+												<span>21</span>
+											</div>
+											<div class="size">
+												<span>127(д) x 23(в) x 56(ш)</span>
+											</div>
+											<div class="weight">
+												<span>1,4кг</span>
+											</div>
+											<div class="price">
+												<span>$ 431.67</span>
+											</div>
+											<div class="status damaged">Посылка повреждена</div>
+											<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+										</div>
+										<div class="line-body">
+											<div class="line-photo">
+												<div class="photo-gal"><a href="#">Смотреть фотоотчёт (5 фото)</a></div>
+												<div class="add-photo">
+													<span>Заказать еще 10 фото:<span>+ $2.00</span></span>
+													<span class="card"><img src="img/parcel-card.png" alt=""></span>
+												</div>
+												<ul class="gallery">
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+													<li><a data-fancybox="gallery" href="img/gal-img.jpg"><img src="img/gal-img.jpg" alt="img"></a></li>
+												</ul>
+											</div>
+											<div class="line-footer">
+												<div class="repack">
+													<div class="check">
+														<input id="repack" type="checkbox">
+														<label for="repack">Переупаковать посылку (%1.25)</label>
+													</div>
+												</div>
+												<div class="foo-right">
+													<a href="#" class="history">История о посылке</a>
+													<button class="send">Отправить посылку</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sent">
+					<div class="container">
+						<div class="sent-body">
+							<div class="table-header">
+								<div class="th-type">Тип</div>
+								<div class="th-number"># Декларации</div>
+								<div class="th-shipping">Дата отправки</div>
+								<div class="th-size">Размер, см</div>
+								<div class="th-weight">Вес, кг</div>
+								<div class="th-price">Сумма</div>
+								<div class="th-status">Статус</div>
+							</div>
+							<div class="table-body">
+								<form action="/">
+									<div class="line">
+										<div class="line-header">
+											<div class="type">
+												<div class="consolidated"><img src="img/packages.png" alt="img"></div>
+											</div>
+											<div class="number">
+												<span class="title">MU574-122358</span>
+												<span class="site">T/N 45645465451</span>
+											</div>
+											<div class="shipping">
+												<span>Апр. 24, 2017 ~ 5:21 PM</span>
+											</div>
+											<div class="size">
+												<span>127(д) x 23(в) x 56(ш)</span>
+											</div>
+											<div class="weight">
+												<span>1,4кг</span>
+											</div>
+											<div class="price">
+												<span>$ 431.67</span>
+											</div>
+											<div class="status sent">Посылка отправлена</div>
+											<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+										</div>
+										<div class="line-body">
+											<div class="line-gray">
+												<div class="parcel-type">
+													<h4>Тип посылки</h4>
+													<span>Обьединённая</span>
+													<ul class="parcel-list">
+														<li>1 <span>IL215-000001</span></li>
+														<li>2 <span>IL215-000002</span></li>
+														<li>3 <span>IL215-000003</span></li>
+														<li>4 <span>IL215-000004</span></li>
+													</ul>
+												</div>
+												<div class="parcel-status">
+													<h4>Статус посылки</h4>
+													<div class="status okay">
+														Всё в порядке - готовиться к отправке
+													</div>
+													<div class="status-bar">
+														<div class="status-line"><span class="indicator" style="width: 7%"></span></div>
+														<div class="dot-indicators">
+															<div class="dot active">
+																<span class="di-date">Apr. 24</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Готовиться<br>к отправке</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Apr. 26</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Посылка<br>отправлена</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 02</span>
+																<span class="di-dot"></span>
+																<span class="di-status">В вашей<br>стране</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 07</span>
+																<span class="di-dot"></span>
+																<span class="di-status">На складе<br>(ваш город)</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 15</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Доставка<br>курьером</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="parcel-barcode">
+													<h4>Barcode</h4>
+													<div class="barcode">
+														<img src="img/barcode.jpg" alt="barcode">
+													</div>
+												</div>
+											</div>
+											<div class="line-footer">
+												<div class="answer">
+													<div class="check">
+														<input id="answer" type="checkbox">
+														<label for="answer">Ответить в течении рабочего дня (+ $0.50)</label>
+													</div>
+												</div>
+												<div class="foo-right">
+													<select name="request" id="request">
+														<option value="- Выберите тему запроса -">- Выберите тему запроса -</option>
+														<option value="Выберите тему запроса">Возврат</option>
+														<option value="Выберите тему запроса">Пересылка</option>
+														<option value="Выберите тему запроса">Распаковка</option>
+													</select>
+													<button class="send">Отправить запрос</button>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="type">
+												<div class="consolidated"><img src="img/packages.png" alt="img"></div>
+											</div>
+											<div class="number">
+												<span class="title">MU574-122358</span>
+												<span class="site">T/N 45645465451</span>
+											</div>
+											<div class="shipping">
+												<span>Апр. 24, 2017 ~ 5:21 PM</span>
+											</div>
+											<div class="size">
+												<span>127(д) x 23(в) x 56(ш)</span>
+											</div>
+											<div class="weight">
+												<span>1,4кг</span>
+											</div>
+											<div class="price">
+												<span>$ 431.67</span>
+											</div>
+											<div class="status sent">Посылка отправлена</div>
+											<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+										</div>
+										<div class="line-body">
+											<div class="line-gray">
+												<div class="parcel-type">
+													<h4>Тип посылки</h4>
+													<span>Обьединённая</span>
+													<ul class="parcel-list">
+														<li>1 <span>IL215-000001</span></li>
+														<li>2 <span>IL215-000002</span></li>
+														<li>3 <span>IL215-000003</span></li>
+														<li>4 <span>IL215-000004</span></li>
+													</ul>
+												</div>
+												<div class="parcel-status">
+													<h4>Статус посылки</h4>
+													<div class="status okay">
+														Всё в порядке - готовиться к отправке
+													</div>
+													<div class="status-bar">
+														<div class="status-line"><span class="indicator" style="width: 7%"></span></div>
+														<div class="dot-indicators">
+															<div class="dot active">
+																<span class="di-date">Apr. 24</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Готовиться<br>к отправке</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Apr. 26</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Посылка<br>отправлена</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 02</span>
+																<span class="di-dot"></span>
+																<span class="di-status">В вашей<br>стране</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 07</span>
+																<span class="di-dot"></span>
+																<span class="di-status">На складе<br>(ваш город)</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 15</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Доставка<br>курьером</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="parcel-barcode">
+													<h4>Barcode</h4>
+													<div class="barcode">
+														<img src="img/barcode.jpg" alt="barcode">
+													</div>
+												</div>
+											</div>
+											<div class="line-footer">
+												<div class="answer">
+													<div class="check">
+														<input id="answer" type="checkbox">
+														<label for="answer">Ответить в течении рабочего дня (+ $0.50)</label>
+													</div>
+												</div>
+												<div class="foo-right">
+													<select name="request" id="request">
+														<option value="- Выберите тему запроса -">- Выберите тему запроса -</option>
+														<option value="Выберите тему запроса">Возврат</option>
+														<option value="Выберите тему запроса">Пересылка</option>
+														<option value="Выберите тему запроса">Распаковка</option>
+													</select>
+													<button class="send">Отправить запрос</button>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="type">
+												<div class="consolidated"><img src="img/packages.png" alt="img"></div>
+											</div>
+											<div class="number">
+												<span class="title">MU574-122358</span>
+												<span class="site">T/N 45645465451</span>
+											</div>
+											<div class="shipping">
+												<span>Апр. 24, 2017 ~ 5:21 PM</span>
+											</div>
+											<div class="size">
+												<span>127(д) x 23(в) x 56(ш)</span>
+											</div>
+											<div class="weight">
+												<span>1,4кг</span>
+											</div>
+											<div class="price">
+												<span>$ 431.67</span>
+											</div>
+											<div class="status sent">Посылка отправлена</div>
+											<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+										</div>
+										<div class="line-body">
+											<div class="line-gray">
+												<div class="parcel-type">
+													<h4>Тип посылки</h4>
+													<span>Обьединённая</span>
+													<ul class="parcel-list">
+														<li>1 <span>IL215-000001</span></li>
+														<li>2 <span>IL215-000002</span></li>
+														<li>3 <span>IL215-000003</span></li>
+														<li>4 <span>IL215-000004</span></li>
+													</ul>
+												</div>
+												<div class="parcel-status">
+													<h4>Статус посылки</h4>
+													<div class="status okay">
+														Всё в порядке - готовиться к отправке
+													</div>
+													<div class="status-bar">
+														<div class="status-line"><span class="indicator" style="width: 7%"></span></div>
+														<div class="dot-indicators">
+															<div class="dot active">
+																<span class="di-date">Apr. 24</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Готовиться<br>к отправке</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Apr. 26</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Посылка<br>отправлена</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 02</span>
+																<span class="di-dot"></span>
+																<span class="di-status">В вашей<br>стране</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 07</span>
+																<span class="di-dot"></span>
+																<span class="di-status">На складе<br>(ваш город)</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 15</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Доставка<br>курьером</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="parcel-barcode">
+													<h4>Barcode</h4>
+													<div class="barcode">
+														<img src="img/barcode.jpg" alt="barcode">
+													</div>
+												</div>
+											</div>
+											<div class="line-footer">
+												<div class="answer">
+													<div class="check">
+														<input id="answer" type="checkbox">
+														<label for="answer">Ответить в течении рабочего дня (+ $0.50)</label>
+													</div>
+												</div>
+												<div class="foo-right">
+													<select name="request" id="request">
+														<option value="- Выберите тему запроса -">- Выберите тему запроса -</option>
+														<option value="Выберите тему запроса">Возврат</option>
+														<option value="Выберите тему запроса">Пересылка</option>
+														<option value="Выберите тему запроса">Распаковка</option>
+													</select>
+													<button class="send">Отправить запрос</button>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="type">
+												<div class="consolidated"><img src="img/packages.png" alt="img"></div>
+											</div>
+											<div class="number">
+												<span class="title">MU574-122358</span>
+												<span class="site">T/N 45645465451</span>
+											</div>
+											<div class="shipping">
+												<span>Апр. 24, 2017 ~ 5:21 PM</span>
+											</div>
+											<div class="size">
+												<span>127(д) x 23(в) x 56(ш)</span>
+											</div>
+											<div class="weight">
+												<span>1,4кг</span>
+											</div>
+											<div class="price">
+												<span>$ 431.67</span>
+											</div>
+											<div class="status sent">Посылка отправлена</div>
+											<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+										</div>
+										<div class="line-body">
+											<div class="line-gray">
+												<div class="parcel-type">
+													<h4>Тип посылки</h4>
+													<span>Обьединённая</span>
+													<ul class="parcel-list">
+														<li>1 <span>IL215-000001</span></li>
+														<li>2 <span>IL215-000002</span></li>
+														<li>3 <span>IL215-000003</span></li>
+														<li>4 <span>IL215-000004</span></li>
+													</ul>
+												</div>
+												<div class="parcel-status">
+													<h4>Статус посылки</h4>
+													<div class="status okay">
+														Всё в порядке - готовиться к отправке
+													</div>
+													<div class="status-bar">
+														<div class="status-line"><span class="indicator" style="width: 7%"></span></div>
+														<div class="dot-indicators">
+															<div class="dot active">
+																<span class="di-date">Apr. 24</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Готовиться<br>к отправке</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Apr. 26</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Посылка<br>отправлена</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 02</span>
+																<span class="di-dot"></span>
+																<span class="di-status">В вашей<br>стране</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 07</span>
+																<span class="di-dot"></span>
+																<span class="di-status">На складе<br>(ваш город)</span>
+															</div>
+															<div class="dot">
+																<span class="di-date">Sep. 15</span>
+																<span class="di-dot"></span>
+																<span class="di-status">Доставка<br>курьером</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="parcel-barcode">
+													<h4>Barcode</h4>
+													<div class="barcode">
+														<img src="img/barcode.jpg" alt="barcode">
+													</div>
+												</div>
+											</div>
+											<div class="line-footer">
+												<div class="answer">
+													<div class="check">
+														<input id="answer" type="checkbox">
+														<label for="answer">Ответить в течении рабочего дня (+ $0.50)</label>
+													</div>
+												</div>
+												<div class="foo-right">
+													<select name="request" id="request">
+														<option value="- Выберите тему запроса -">- Выберите тему запроса -</option>
+														<option value="Выберите тему запроса">Возврат</option>
+														<option value="Выберите тему запроса">Пересылка</option>
+														<option value="Выберите тему запроса">Распаковка</option>
+													</select>
+													<button class="send">Отправить запрос</button>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="expected">
+					<div class="container">
+						<div class="expected-body">
+							<div class="table-header">
+								<div class="th-number"># Декларации</div>
+								<div class="th-name">Имя получателя</div>
+								<div class="th-producer">Производитель</div>
+								<div class="th-stock">Склад</div>
+								<div class="th-note">Примечание</div>
+							</div>
+							<div class="table-body">
+								<div class="line">
+									<div class="line-header">
+										<div class="exp-number">
+											<span class="title">USPS</span>
+											<span class="site">T/N 45645465451</span>
+										</div>
+										<div class="exp-name">
+											<span>Фёдоров Сергей Александрович</span>
+										</div>
+										<div class="exp-producer">
+											<span>Bosch <br>(Южная Корея)</span>
+										</div>
+										<div class="exp-stock">
+											<span>#4 <br>Орегон</span>
+										</div>
+										<div class="exp-note">
+											<span>Проверьте шлейф к телефону - слабое место...</span>
+										</div>
+										<div class="exp-edit">
+											<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+											<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+										</div>
+									</div>
+								</div>
+								<div class="line">
+									<div class="line-header">
+										<div class="exp-number">
+											<span class="title">USPS</span>
+											<span class="site">T/N 45645465451</span>
+										</div>
+										<div class="exp-name">
+											<span>Фёдоров Сергей Александрович</span>
+										</div>
+										<div class="exp-producer">
+											<span>Bosch <br>(Южная Корея)</span>
+										</div>
+										<div class="exp-stock">
+											<span>#4 <br>Орегон</span>
+										</div>
+										<div class="exp-note">
+											<span>Проверьте шлейф к телефону - слабое место...</span>
+										</div>
+										<div class="exp-edit">
+											<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+											<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+										</div>
+									</div>
+								</div>
+								<div class="line">
+									<div class="line-header">
+										<div class="exp-number">
+											<span class="title">USPS</span>
+											<span class="site">T/N 45645465451</span>
+										</div>
+										<div class="exp-name">
+											<span>Фёдоров Сергей Александрович</span>
+										</div>
+										<div class="exp-producer">
+											<span>Bosch <br>(Южная Корея)</span>
+										</div>
+										<div class="exp-stock">
+											<span>#4 <br>Орегон</span>
+										</div>
+										<div class="exp-note">
+											<span>Проверьте шлейф к телефону - слабое место...</span>
+										</div>
+										<div class="exp-edit">
+											<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+											<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+										</div>
+									</div>
+								</div>
+								<div class="line">
+									<div class="line-header">
+										<div class="exp-number">
+											<span class="title">USPS</span>
+											<span class="site">T/N 45645465451</span>
+										</div>
+										<div class="exp-name">
+											<span>Фёдоров Сергей Александрович</span>
+										</div>
+										<div class="exp-producer">
+											<span>Bosch <br>(Южная Корея)</span>
+										</div>
+										<div class="exp-stock">
+											<span>#4 <br>Орегон</span>
+										</div>
+										<div class="exp-note">
+											<span>Проверьте шлейф к телефону - слабое место...</span>
+										</div>
+										<div class="exp-edit">
+											<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+											<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+										</div>
+									</div>
+								</div>
+								<div class="line">
+									<div class="line-header">
+										<div class="exp-number">
+											<span class="title">USPS</span>
+											<span class="site">T/N 45645465451</span>
+										</div>
+										<div class="exp-name">
+											<span>Фёдоров Сергей Александрович</span>
+										</div>
+										<div class="exp-producer">
+											<span>Bosch <br>(Южная Корея)</span>
+										</div>
+										<div class="exp-stock">
+											<span>#4 <br>Орегон</span>
+										</div>
+										<div class="exp-note">
+											<span>Проверьте шлейф к телефону - слабое место...</span>
+										</div>
+										<div class="exp-edit">
+											<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+											<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+										</div>
+									</div>
+								</div>
+								<div class="line">
+									<div class="line-header">
+										<div class="exp-number">
+											<span class="title">USPS</span>
+											<span class="site">T/N 45645465451</span>
+										</div>
+										<div class="exp-name">
+											<span>Фёдоров Сергей Александрович</span>
+										</div>
+										<div class="exp-producer">
+											<span>Bosch <br>(Южная Корея)</span>
+										</div>
+										<div class="exp-stock">
+											<span>#4 <br>Орегон</span>
+										</div>
+										<div class="exp-note">
+											<span>Проверьте шлейф к телефону - слабое место...</span>
+										</div>
+										<div class="exp-edit">
+											<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+											<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="dash-accordion">
+				<select name="period" id="period_acc">
+					<option value="за сегодня">за сегодня</option>
+					<option value="за 3 дня">за 3 дня</option>
+					<option value="за неделю">за неделю</option>
+					<option value="за месяц">за месяц</option>
+				</select>
+				<div id="accordion">
+					<h4>На складе в США</h4>
+					<div id="stock_acc">
+						<div class="container">
+							<div class="stock-body">
+								<div class="table-body">
+									<form action="/">
+										<div class="line">
+											<div class="line-header">
+												<div class="check"><input type="checkbox"></div>
+												<span class="d-label"># Декларации</span>
+												<div class="number">
+													<span class="title">IL215-000001</span>
+													<span class="site">Amazon.com, N/A</span>
+													<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+												</div>
+												<span class="d-label">Прибытие / Отправка</span>
+												<div class="shipping">
+													<span>Апр. 24, 2017 ~ 5:21 PM</span>
+													<span>Апр. 25, 2017 ~ 9:20 AM</span>
+												</div>
+												<span class="d-label">Бесплатное хранение, дней</span>
+												<div class="storage">
+													<span>21</span>
+												</div>
+												<span class="d-label">Размер, см</span>
+												<div class="size">
+													<span>127(д) x 23(в) x 56(ш)</span>
+												</div>
+												<span class="d-label">Вес, кг</span>
+												<div class="weight">
+													<span>1,4кг</span>
+												</div>
+												<span class="d-label">Сумма</span>
+												<div class="price">
+													<span>$ 431.67</span>
+												</div>
+												<span class="d-label">Статус</span>
+												<div class="status okay">Посылка в порядке</div>
+												<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+											</div>
+										</div>
+										<div class="line">
+											<div class="line-header">
+												<div class="check"><input type="checkbox"></div>
+												<span class="d-label"># Декларации</span>
+												<div class="number">
+													<span class="title">IL215-000001</span>
+													<span class="site">Amazon.com, N/A</span>
+													<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+												</div>
+												<span class="d-label">Прибытие / Отправка</span>
+												<div class="shipping">
+													<span>Апр. 24, 2017 ~ 5:21 PM</span>
+													<span>Апр. 25, 2017 ~ 9:20 AM</span>
+												</div>
+												<span class="d-label">Бесплатное хранение, дней</span>
+												<div class="storage">
+													<span>21</span>
+												</div>
+												<span class="d-label">Размер, см</span>
+												<div class="size">
+													<span>127(д) x 23(в) x 56(ш)</span>
+												</div>
+												<span class="d-label">Вес, кг</span>
+												<div class="weight">
+													<span>1,4кг</span>
+												</div>
+												<span class="d-label">Сумма</span>
+												<div class="price">
+													<span>$ 431.67</span>
+												</div>
+												<span class="d-label">Статус</span>
+												<div class="status damaged">Посылка повреждена</div>
+												<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+											</div>
+										</div>
+										<div class="line">
+											<div class="line-header">
+												<div class="check"><input type="checkbox"></div>
+												<span class="d-label"># Декларации</span>
+												<div class="number">
+													<span class="title">IL215-000001</span>
+													<span class="site">Amazon.com, N/A</span>
+													<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+												</div>
+												<span class="d-label">Прибытие / Отправка</span>
+												<div class="shipping">
+													<span>Апр. 24, 2017 ~ 5:21 PM</span>
+													<span>Апр. 25, 2017 ~ 9:20 AM</span>
+												</div>
+												<span class="d-label">Бесплатное хранение, дней</span>
+												<div class="storage">
+													<span>21</span>
+												</div>
+												<span class="d-label">Размер, см</span>
+												<div class="size">
+													<span>127(д) x 23(в) x 56(ш)</span>
+												</div>
+												<span class="d-label">Вес, кг</span>
+												<div class="weight">
+													<span>1,4кг</span>
+												</div>
+												<span class="d-label">Сумма</span>
+												<div class="price">
+													<span>$ 431.67</span>
+												</div>
+												<span class="d-label">Статус</span>
+												<div class="status pack-damaged">Упаковка повреждена</div>
+												<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+											</div>
+										</div>
+										<div class="line">
+											<div class="line-header">
+												<div class="check"><input type="checkbox"></div>
+												<span class="d-label"># Декларации</span>
+												<div class="number">
+													<span class="title">IL215-000001</span>
+													<span class="site">Amazon.com, N/A</span>
+													<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+												</div>
+												<span class="d-label">Прибытие / Отправка</span>
+												<div class="shipping">
+													<span>Апр. 24, 2017 ~ 5:21 PM</span>
+													<span>Апр. 25, 2017 ~ 9:20 AM</span>
+												</div>
+												<span class="d-label">Бесплатное хранение, дней</span>
+												<div class="storage">
+													<span>21</span>
+												</div>
+												<span class="d-label">Размер, см</span>
+												<div class="size">
+													<span>127(д) x 23(в) x 56(ш)</span>
+												</div>
+												<span class="d-label">Вес, кг</span>
+												<div class="weight">
+													<span>1,4кг</span>
+												</div>
+												<span class="d-label">Сумма</span>
+												<div class="price">
+													<span>$ 431.67</span>
+												</div>
+												<span class="d-label">Статус</span>
+												<div class="status okay">Посылка в порядке</div>
+												<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+											</div>
+										</div>
+										<div class="line">
+											<div class="line-header">
+												<div class="check"><input type="checkbox"></div>
+												<span class="d-label"># Декларации</span>
+												<div class="number">
+													<span class="title">IL215-000001</span>
+													<span class="site">Amazon.com, N/A</span>
+													<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+												</div>
+												<span class="d-label">Прибытие / Отправка</span>
+												<div class="shipping">
+													<span>Апр. 24, 2017 ~ 5:21 PM</span>
+													<span>Апр. 25, 2017 ~ 9:20 AM</span>
+												</div>
+												<span class="d-label">Бесплатное хранение, дней</span>
+												<div class="storage">
+													<span>21</span>
+												</div>
+												<span class="d-label">Размер, см</span>
+												<div class="size">
+													<span>127(д) x 23(в) x 56(ш)</span>
+												</div>
+												<span class="d-label">Вес, кг</span>
+												<div class="weight">
+													<span>1,4кг</span>
+												</div>
+												<span class="d-label">Сумма</span>
+												<div class="price">
+													<span>$ 431.67</span>
+												</div>
+												<span class="d-label">Статус</span>
+												<div class="status okay">Посылка в порядке</div>
+												<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+											</div>
+										</div>
+										<div class="line">
+											<div class="line-header">
+												<div class="check"><input type="checkbox"></div>
+												<span class="d-label"># Декларации</span>
+												<div class="number">
+													<span class="title">IL215-000001</span>
+													<span class="site">Amazon.com, N/A</span>
+													<span class="bonded"><img src="img/bonded.png" alt="img"></span>
+												</div>
+												<span class="d-label">Прибытие / Отправка</span>
+												<div class="shipping">
+													<span>Апр. 24, 2017 ~ 5:21 PM</span>
+													<span>Апр. 25, 2017 ~ 9:20 AM</span>
+												</div>
+												<span class="d-label">Бесплатное хранение, дней</span>
+												<div class="storage">
+													<span>21</span>
+												</div>
+												<span class="d-label">Размер, см</span>
+												<div class="size">
+													<span>127(д) x 23(в) x 56(ш)</span>
+												</div>
+												<span class="d-label">Вес, кг</span>
+												<div class="weight">
+													<span>1,4кг</span>
+												</div>
+												<span class="d-label">Сумма</span>
+												<div class="price">
+													<span>$ 431.67</span>
+												</div>
+												<span class="d-label">Статус</span>
+												<div class="status damaged">Посылка повреждена</div>
+												<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h4>Отправленные посылки</h4>
+					<div id="sent_acc">
+						<div class="container">
+							<div class="sent-body">
+								<div class="table-body">
+									<form action="/">
+										<div class="line">
+											<div class="line-header">
+												<span class="d-label">Тип</span>
+												<div class="type">
+													<div class="consolidated"><img src="img/packages.png" alt="img"></div>
+												</div>
+												<span class="d-label"># Декларации</span>
+												<div class="number">
+													<span class="title">MU574-122358</span>
+													<span class="site">T/N 45645465451</span>
+												</div>
+												<span class="d-label">Дата отправки</span>
+												<div class="shipping">
+													<span>Апр. 24, 2017 ~ 5:21 PM</span>
+												</div>
+												<span class="d-label">Размер, см</span>
+												<div class="size">
+													<span>127(д) x 23(в) x 56(ш)</span>
+												</div>
+												<span class="d-label">Вес, кг</span>
+												<div class="weight">
+													<span>1,4кг</span>
+												</div>
+												<span class="d-label">Сумма</span>
+												<div class="price">
+													<span>$ 431.67</span>
+												</div>
+												<span class="d-label">Статус</span>
+												<div class="status sent">Посылка отправлена</div>
+												<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+											</div>
+										</div>
+										<div class="line">
+											<div class="line-header">
+												<span class="d-label">Тип</span>
+												<div class="type">
+													<div class="consolidated"><img src="img/packages.png" alt="img"></div>
+												</div>
+												<span class="d-label"># Декларации</span>
+												<div class="number">
+													<span class="title">MU574-122358</span>
+													<span class="site">T/N 45645465451</span>
+												</div>
+												<span class="d-label">Дата отправки</span>
+												<div class="shipping">
+													<span>Апр. 24, 2017 ~ 5:21 PM</span>
+												</div>
+												<span class="d-label">Размер, см</span>
+												<div class="size">
+													<span>127(д) x 23(в) x 56(ш)</span>
+												</div>
+												<span class="d-label">Вес, кг</span>
+												<div class="weight">
+													<span>1,4кг</span>
+												</div>
+												<span class="d-label">Сумма</span>
+												<div class="price">
+													<span>$ 431.67</span>
+												</div>
+												<span class="d-label">Статус</span>
+												<div class="status sent">Посылка отправлена</div>
+												<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+											</div>
+										</div>
+										<div class="line">
+											<div class="line-header">
+												<span class="d-label">Тип</span>
+												<div class="type">
+													<div class="consolidated"><img src="img/packages.png" alt="img"></div>
+												</div>
+												<span class="d-label"># Декларации</span>
+												<div class="number">
+													<span class="title">MU574-122358</span>
+													<span class="site">T/N 45645465451</span>
+												</div>
+												<span class="d-label">Дата отправки</span>
+												<div class="shipping">
+													<span>Апр. 24, 2017 ~ 5:21 PM</span>
+												</div>
+												<span class="d-label">Размер, см</span>
+												<div class="size">
+													<span>127(д) x 23(в) x 56(ш)</span>
+												</div>
+												<span class="d-label">Вес, кг</span>
+												<div class="weight">
+													<span>1,4кг</span>
+												</div>
+												<span class="d-label">Сумма</span>
+												<div class="price">
+													<span>$ 431.67</span>
+												</div>
+												<span class="d-label">Статус</span>
+												<div class="status sent">Посылка отправлена</div>
+												<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+											</div>
+										</div>
+										<div class="line">
+											<div class="line-header">
+												<span class="d-label">Тип</span>
+												<div class="type">
+													<div class="consolidated"><img src="img/packages.png" alt="img"></div>
+												</div>
+												<span class="d-label"># Декларации</span>
+												<div class="number">
+													<span class="title">MU574-122358</span>
+													<span class="site">T/N 45645465451</span>
+												</div>
+												<span class="d-label">Дата отправки</span>
+												<div class="shipping">
+													<span>Апр. 24, 2017 ~ 5:21 PM</span>
+												</div>
+												<span class="d-label">Размер, см</span>
+												<div class="size">
+													<span>127(д) x 23(в) x 56(ш)</span>
+												</div>
+												<span class="d-label">Вес, кг</span>
+												<div class="weight">
+													<span>1,4кг</span>
+												</div>
+												<span class="d-label">Сумма</span>
+												<div class="price">
+													<span>$ 431.67</span>
+												</div>
+												<span class="d-label">Статус</span>
+												<div class="status sent">Посылка отправлена</div>
+												<div class="drop"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h4>Ожидаемые посылки</h4>
+					<div id="expected_acc">
+						<div class="container">
+							<div class="expected-body">
+								<div class="table-body">
+									<div class="line">
+										<div class="line-header">
+											<div class="d-label"># Декларации</div>
+											<div class="exp-number">
+												<span class="title">USPS</span>
+												<span class="site">T/N 45645465451</span>
+											</div>
+											<div class="d-label">Имя получателя</div>
+											<div class="exp-name">
+												<span>Фёдоров Сергей Александрович</span>
+											</div>
+											<div class="d-label">Производитель</div>
+											<div class="exp-producer">
+												<span>Bosch <br>(Южная Корея)</span>
+											</div>
+											<div class="d-label">Склад</div>
+											<div class="exp-stock">
+												<span>#4 <br>Орегон</span>
+											</div>
+											<div class="d-label">Примечание</div>
+											<div class="exp-note">
+												<span>Проверьте шлейф к телефону - слабое место...</span>
+											</div>
+											<div class="exp-edit">
+												<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+												<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="d-label"># Декларации</div>
+											<div class="exp-number">
+												<span class="title">USPS</span>
+												<span class="site">T/N 45645465451</span>
+											</div>
+											<div class="d-label">Имя получателя</div>
+											<div class="exp-name">
+												<span>Фёдоров Сергей Александрович</span>
+											</div>
+											<div class="d-label">Производитель</div>
+											<div class="exp-producer">
+												<span>Bosch <br>(Южная Корея)</span>
+											</div>
+											<div class="d-label">Склад</div>
+											<div class="exp-stock">
+												<span>#4 <br>Орегон</span>
+											</div>
+											<div class="d-label">Примечание</div>
+											<div class="exp-note">
+												<span>Проверьте шлейф к телефону - слабое место...</span>
+											</div>
+											<div class="exp-edit">
+												<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+												<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="d-label"># Декларации</div>
+											<div class="exp-number">
+												<span class="title">USPS</span>
+												<span class="site">T/N 45645465451</span>
+											</div>
+											<div class="d-label">Имя получателя</div>
+											<div class="exp-name">
+												<span>Фёдоров Сергей Александрович</span>
+											</div>
+											<div class="d-label">Производитель</div>
+											<div class="exp-producer">
+												<span>Bosch <br>(Южная Корея)</span>
+											</div>
+											<div class="d-label">Склад</div>
+											<div class="exp-stock">
+												<span>#4 <br>Орегон</span>
+											</div>
+											<div class="d-label">Примечание</div>
+											<div class="exp-note">
+												<span>Проверьте шлейф к телефону - слабое место...</span>
+											</div>
+											<div class="exp-edit">
+												<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+												<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="d-label"># Декларации</div>
+											<div class="exp-number">
+												<span class="title">USPS</span>
+												<span class="site">T/N 45645465451</span>
+											</div>
+											<div class="d-label">Имя получателя</div>
+											<div class="exp-name">
+												<span>Фёдоров Сергей Александрович</span>
+											</div>
+											<div class="d-label">Производитель</div>
+											<div class="exp-producer">
+												<span>Bosch <br>(Южная Корея)</span>
+											</div>
+											<div class="d-label">Склад</div>
+											<div class="exp-stock">
+												<span>#4 <br>Орегон</span>
+											</div>
+											<div class="d-label">Примечание</div>
+											<div class="exp-note">
+												<span>Проверьте шлейф к телефону - слабое место...</span>
+											</div>
+											<div class="exp-edit">
+												<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+												<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="d-label"># Декларации</div>
+											<div class="exp-number">
+												<span class="title">USPS</span>
+												<span class="site">T/N 45645465451</span>
+											</div>
+											<div class="d-label">Имя получателя</div>
+											<div class="exp-name">
+												<span>Фёдоров Сергей Александрович</span>
+											</div>
+											<div class="d-label">Производитель</div>
+											<div class="exp-producer">
+												<span>Bosch <br>(Южная Корея)</span>
+											</div>
+											<div class="d-label">Склад</div>
+											<div class="exp-stock">
+												<span>#4 <br>Орегон</span>
+											</div>
+											<div class="d-label">Примечание</div>
+											<div class="exp-note">
+												<span>Проверьте шлейф к телефону - слабое место...</span>
+											</div>
+											<div class="exp-edit">
+												<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+												<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+											</div>
+										</div>
+									</div>
+									<div class="line">
+										<div class="line-header">
+											<div class="d-label"># Декларации</div>
+											<div class="exp-number">
+												<span class="title">USPS</span>
+												<span class="site">T/N 45645465451</span>
+											</div>
+											<div class="d-label">Имя получателя</div>
+											<div class="exp-name">
+												<span>Фёдоров Сергей Александрович</span>
+											</div>
+											<div class="d-label">Производитель</div>
+											<div class="exp-producer">
+												<span>Bosch <br>(Южная Корея)</span>
+											</div>
+											<div class="d-label">Склад</div>
+											<div class="exp-stock">
+												<span>#4 <br>Орегон</span>
+											</div>
+											<div class="d-label">Примечание</div>
+											<div class="exp-note">
+												<span>Проверьте шлейф к телефону - слабое место...</span>
+											</div>
+											<div class="exp-edit">
+												<div class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+												<div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="foo-logo col-lg-2 col-md-2">
+						<a href="#"><img src="img/shipux_logo.svg" alt="shipux"></a>
+					</div>
+					<div class="foo-text col-lg-8 col-md-8">
+						<p>Copyright @ 2017 Company LLC. Sitename trademark and sitename logo are registered to company LLC. All Rights Reserved. All other logos, brands and designated trademarks are the property of their respective holders. Use of this website requires acceptance of the Privacy Policy. TPS and Money Back Guarantee Terms.</p>
+						<div class="foo-info">
+							<span><i class="fa fa-globe" aria-hidden="true"></i>12345 51ST New York, NY 10001</span><span><i class="fa fa-phone" aria-hidden="true"></i>(123) 456-7890</span><span><i class="fa fa-envelope-o" aria-hidden="true"></i>info@sitename.com</span><span><i class="fa fa-th" aria-hidden="true"></i>Sitemap</span>
+						</div>
+					</div>
+					<div class="foo-social col-lg-2 col-md-2">
+						<ul>
+							<li class="facebook">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li class="twitter">
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+							<li class="google">
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

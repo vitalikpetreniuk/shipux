@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shipux - Calculate</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.formstyler.js"></script>
+    <script src="js/jquery-ui.js"></script>
+	<script src="js/custom.js"></script>
+</head>
+<body>
+
+	<div id="wrapper" class="calculate">
+		<header>
+			<div class="container">
+				<div class="header-top">
+					<div class="header-calc">
+						<a href="#">Калькулятор доставки</a>
+					</div>
+					<div class="header-help">
+						<a href="help.html">Помощь в покупке</a>
+					</div>
+					<div class="header-lang">
+						<span class="lang">Ru</span><span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+						<ul>
+							<li>Ua</li>
+							<li>Ru</li>
+							<li>En</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-bottom row">
+					<div class="col-lg-4 col-md-4 col-sm-3 shipux-logo">
+						<a href="/"><img src="img/shipux_logo_yellow.svg" alt="logo"></a>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-9 shipux-right">
+						<div class="shipux-login">
+							<a href="#">Войти / Регистрация</a>
+						</div>
+						<ul class="shipux-nav">
+							<li><a href="#">Услуги и цены</a></li>
+							<li><a href="process.html">Как это работает?</a></li>
+							<li><a href="#">Вопросы и ответы</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="calculate-top">
+			<div class="container">
+				<h1>Калькулятор доставки</h1>
+				<h5>Узнайте точную стоимость доставки из США</h5>
+			</div>
+		</div>
+		<div class="calculate-body">
+			<div class="container">
+				<form action="/" method="get">
+					<div class="form-top">
+						<div class="stock">
+							<label for="stock">Склад</label>
+							<select id="stock">
+								<option hidden disabled selected>- Выберите склад -</option>
+								<option>Склад №1</option>
+								<option>Склад №2</option>
+								<option>Склад №3</option>
+								<option>Склад №4</option>
+								<option>Склад №5</option>
+								<option>Склад №6</option>
+							</select>
+						</div>
+						<div class="country">
+							<label for="country">Страна</label>
+							<select id="country">
+								<option hidden disabled selected>- Выберите страну доставки -</option>
+								<option>Украина</option>
+								<option>Ирландия</option>
+								<option>США</option>
+								<option>Уругвай</option>
+								<option>Испания</option>
+								<option>Шотландия</option>
+							</select>
+						</div>
+						<div class="city">
+							<label for="city">Город</label>
+							<select id="city">
+								<option hidden disabled selected>- Выберите город -</option>
+								<option>Одесса</option>
+								<option>Луцк</option>
+								<option>Киев</option>
+								<option>Черновцы</option>
+								<option>Ивано-Франковск</option>
+								<option>Тернополь</option>
+							</select>
+						</div>
+						<div class="index">
+							<label for="index">Индекс</label>
+							<input type="text" id="index">
+						</div>
+						<span class="clear"></span>
+					</div>
+					<div class="form-parcel">
+						<h4>Параметры посылки</h4>
+						<div class="length">
+							<label for="length">Длина</label>
+							<input type="text" id="length">
+						</div>
+						<div class="width">
+							<label for="width">Ширина</label>
+							<input type="text" id="width">
+						</div>
+						<div class="height">
+							<label for="height">Высота</label>
+							<input type="text" id="height">
+						</div>
+						<div class="units">
+							<label for="units">Высота</label>
+							<select id="units">
+								<option selected>mm</option>
+								<option>sm</option>
+								<option>m</option>
+							</select>
+						</div>
+						<span class="clear"></span>
+                        <div class="weight">
+                            <label for="weight">Вес товара</label>
+                            <input type="text" id="weight" value="1">
+                            <div class="weight units">
+                                <select id="weight-units">
+                                    <option selected>kg</option>
+                                    <option>lb</option>
+                                </select>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="price">
+                            <label for="price">Стоимость</label>
+                            <input type="text" id="price" value="1">
+                            <div class="price units">
+                                <select id="price-units">
+                                    <option selected>$</option>
+                                    <option>€</option>
+                                    <option>£</option>
+                                </select>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+					</div>
+					<div class="form-list">
+						<ul>
+							<li>
+								<span class="name">Ориентировочная сумма таможенных платежей </span>
+								<span class="price">$89.60</span>
+							</li>
+							<li>
+								<span class="name">Международная доставка</span>
+								<span class="price"> $689.30</span>
+							</li>
+							<li>
+								<span class="name"> Сборы ShipUx</span>
+								<span class="price"> + $10.00 </span>
+							</li>
+							<li>
+								<span class="name"> Услуга «Упаковать вместе» </span>
+								<span class="price"> + $4.12 </span>
+							</li>
+							<li>
+								<span class="name">Всего</span>
+								<span class="price full">$1245.12</span>
+							</li>
+						</ul>
+					</div>
+					<span class="starred">* Якщо загальна сума вашого замовлення перевищує $160.00, вам  необхідно оплатити 35% від суми перевищення ліміту*</span>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="foo-logo col-lg-2 col-md-2">
+						<a href="#"><img src="img/shipux_logo.svg" alt="shipux"></a>
+					</div>
+					<div class="foo-text col-lg-8 col-md-8">
+						<p>Copyright @ 2017 Company LLC. Sitename trademark and sitename logo are registered to company LLC. All Rights Reserved. All other logos, brands and designated trademarks are the property of their respective holders. Use of this website requires acceptance of the Privacy Policy. TPS and Money Back Guarantee Terms.</p>
+						<div class="foo-info">
+							<span><i class="fa fa-globe" aria-hidden="true"></i>12345 51ST New York, NY 10001</span><span><i class="fa fa-phone" aria-hidden="true"></i>(123) 456-7890</span><span><i class="fa fa-envelope-o" aria-hidden="true"></i>info@sitename.com</span><span><i class="fa fa-th" aria-hidden="true"></i>Sitemap</span>
+						</div>
+					</div>
+					<div class="foo-social col-lg-2 col-md-2">
+						<ul>
+							<li class="facebook">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li class="twitter">
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+							<li class="google">
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

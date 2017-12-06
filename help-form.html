@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shipux - Help Form</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.formstyler.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+</head>
+<body>
+
+	<div id="wrapper" class="help h-form">
+		<header>
+			<div class="container">
+				<div class="header-top">
+					<div class="header-calc">
+						<a href="#">Калькулятор доставки</a>
+					</div>
+					<div class="header-help">
+						<a href="help.html">Помощь в покупке</a>
+					</div>
+					<div class="header-lang">
+						<span class="lang">Ru</span><span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+						<ul>
+							<li>Ua</li>
+							<li>Ru</li>
+							<li>En</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-bottom row">
+					<div class="col-lg-4 col-md-4 col-sm-3 shipux-logo">
+						<a href="/">
+							<img src="img/shipux_logo_yellow.svg" alt="logo">
+							<span class="logo-text"><i class="fa fa-caret-left"></i>На главную</span>
+						</a>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-9 shipux-right">
+						<div class="shipux-login">
+							<a href="#">Войти / Регистрация</a>
+						</div>
+						<ul class="shipux-nav">
+							<li><a href="#">Услуги и цены</a></li>
+							<li><a href="process.html">Как это работает?</a></li>
+							<li><a href="#">Вопросы и ответы</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="help-top">
+			<div class="container">
+				<div class="help-img"><img src="img/help-img.png" alt="help-img"></div>
+				<h1>Помощь в покупке</h1>
+				<h5>Давайте сделаем вашу покупку лёгкой</h5>
+			</div>
+		</div>
+		<div class="help-form">
+			<div class="container">
+				<form action="/" method="get">
+					<div class="form-left">
+						<div class="site-name">
+							<label for="site-name">Название сайта</label>
+							<input id="site-name" type="text" placeholder="Амазон">
+						</div>
+						<div class="product-name">
+							<label for="product-name">Название товара</label>
+							<input id="product-name" type="text" placeholder="Штаны">
+						</div>
+						<div class="product-link">
+							<label for="product-link">Ссылка на товар</label>
+							<input id="product-link" type="text" placeholder="www.wehyuiwjk.com">
+						</div>
+						<div class="shipping">
+							<label for="shipping">Местная доставка / сборы</label>
+							<input id="shipping" type="text" placeholder="$ 5.14">
+						</div>
+						<div class="stock">
+							<label for="stock">Куда отправлять заказ?</label>
+							<select id="stock">
+								<option selected>Склад №1 (Орегон)</option>
+								<option>Склад №2 (Тенесси)</option>
+								<option>Склад №3 (Кентуки)</option>
+								<option>Склад №4 (Джорджия)</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-right">
+						<div class="site-url">
+							<label for="site-url">URL caйта</label>
+							<input id="site-url" type="text" placeholder="www.amazon.com">
+						</div>
+						<div class="product-options">
+							<label for="product-options">Опции товара</label>
+							<input id="product-options" type="text" placeholder="Шевченка">
+						</div>
+						<div class="product-price halfsize">
+							<label for="product-price">Цена за ед.</label>
+							<input id="product-price" type="text" placeholder="$ 5.14">
+						</div>
+						<div class="product-qua halfsize">
+							<label for="product-qua">кол-во, шт.</label>
+							<input id="product-qua" type="text" placeholder="65">
+						</div>
+						<div class="product-tax">
+							<label for="product-tax">Местные налоги</label>
+							<input id="product-tax" type="text" placeholder="$ 5.14">
+						</div>
+						<div class="product-instructions">
+							<label for="product-instructions">Инструкции по покупке</label>
+							<input id="product-instructions" type="text" placeholder="Текст описания...">
+						</div>
+					</div>
+					<div class="clear"></div>
+					<button type="submit">создать покупку</button>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="foo-logo col-lg-2 col-md-2">
+						<a href="#"><img src="img/shipux_logo.svg" alt="shipux"></a>
+					</div>
+					<div class="foo-text col-lg-8 col-md-8">
+						<p>Copyright @ 2017 Company LLC. Sitename trademark and sitename logo are registered to company LLC. All Rights Reserved. All other logos, brands and designated trademarks are the property of their respective holders. Use of this website requires acceptance of the Privacy Policy. TPS and Money Back Guarantee Terms.</p>
+						<div class="foo-info">
+							<span><i class="fa fa-globe" aria-hidden="true"></i>12345 51ST New York, NY 10001</span><span><i class="fa fa-phone" aria-hidden="true"></i>(123) 456-7890</span><span><i class="fa fa-envelope-o" aria-hidden="true"></i>info@sitename.com</span><span><i class="fa fa-th" aria-hidden="true"></i>Sitemap</span>
+						</div>
+					</div>
+					<div class="foo-social col-lg-2 col-md-2">
+						<ul>
+							<li class="facebook">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li class="twitter">
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+							<li class="google">
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shipux - Stock List</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.formstyler.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+</head>
+<body>
+
+	<div id="wrapper">
+		<header>
+			<div class="container">
+				<div class="header-top">
+					<div class="header-calc">
+						<a href="#">Калькулятор доставки</a>
+					</div>
+					<div class="header-help">
+						<a href="help.html">Помощь в покупке</a>
+					</div>
+					<div class="header-lang">
+						<span class="lang">Ru</span><span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+						<ul>
+							<li>Ua</li>
+							<li>Ru</li>
+							<li>En</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-bottom row">
+					<div class="col-lg-2 col-md-2 col-sm-3 shipux-logo">
+						<a href="/"><img src="img/shipux_logo_yellow.svg" alt="logo"></a>
+					</div>
+					<div class="col-lg-10 col-md-10  col-sm-9 shipux-right">
+						<div class="shipux-login">
+							<div class="shipux-notifications">
+								<i class="fa fa-bell" aria-hidden="true"></i>
+								<span class="note_qua">10</span>
+								<div class="notifications-drop">
+									<i class="fa fa-caret-up"></i>
+									<div class="nd-header">
+										<span class="notif-qua">Получено (10)</span>
+										<a href="#">Mark All Read</a>
+									</div>
+									<div class="nd-body">
+										<ul>
+											<li>
+												<span class="condition"><img src="img/parcel-okay.png" alt="okay"></span>
+												<span class="info">
+													<span class="title">
+														<span>IL215-000001</span> посылка получена:<br>
+														<span><span class="con">Посылка в порядке</span> / <span class="pack">коробка целая</span></span>
+													</span>
+													<a href="#" class="watch">Смотреть</a>
+													<a href="#" class="details">детали посылки</a>
+												</span>
+											</li>
+											<li class="read">
+												<span class="condition"><img src="img/parcel-mistake.png" alt="damaged"></span>
+												<span class="info">
+													<span class="title">
+														<span>IL215-000001</span> посылка получена:<br>
+														<span><span class="con damaged">Товар поцарапанный</span> / <span class="pack">коробка целая</span></span>
+													</span>
+													<a href="#" class="watch">Смотреть</a>
+													<a href="#" class="details">детали посылки</a>
+												</span>
+											</li>
+										</ul>
+										<span class="watch-all"><a href="#">Смотреть все уведомления</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="shipux-acc">
+								<div class="acc-avatar">
+									<img src="img/avatar.png" alt="avatar">
+								</div>
+								<div class="acc-name">Julia Lightenberg <i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+								<div class="acc-drop">
+									<ul>
+										<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Тикеты</a></li>
+										<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Настройки аккаунта</a></li>
+										<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Партнёрская программа</a></li>
+										<li class="quit"><a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> Выход</a></li>
+									</ul>
+									<div class="balance"><span><span>Баланс:</span> $718.00 <i class="fa fa-credit-card-alt" aria-hidden="true"></i></span></div>
+								</div>
+							</div>
+						</div>
+						<ul class="shipux-nav">
+							<li><a href="#">Посылки на складе</a></li>
+							<li><a href="process.html">Отправленные посылки</a></li>
+							<li><a href="#">Ожидаемые посылки</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="acc-content">
+			<div class="container">
+				<div class="sidebar">
+					<ul class="acc-nav">
+						<li><a href="#">Баланс аккаунта</a></li>
+						<li class="active">
+							<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
+							<ul class="subnav">
+								<li><a href="#">Общие настройки</a></li>
+								<li><a href="#">Адреса</a></li>
+								<li class="active"><a href="#">Склады</a></li>
+								<li><a href="#">Дополнительные имена</a></li>
+								<li><a href="#">Партнёрская программа</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Тариф аккаунта</a></li>
+						<li><a href="#">Оповещения</a></li>
+						<li><a href="#">Тикеты</a></li>
+					</ul>
+				</div>
+				<div class="content">
+					<div class="content-top">
+						<h2>Склады</h2>
+					</div>
+					<div class="content-body">
+						<form class="stock-list" action="/">
+							<div class="stc-table">
+								<div class="stc-header">
+									<h5>Склад #1</h5> <span>(Склад по умолчанию)</span>
+									<div class="right">
+										<input type="radio" id="stock1" name="stock" checked>
+										<label for="stock1">Использовать этот склад</label>
+									</div>
+								</div>
+								<div class="stc-line">
+									<div class="stc-block">
+										<span>Город</span>
+										<div>Одесса</div>
+									</div>
+									<div class="stc-block">
+										<span>Штат</span>
+										<div>Одесская область</div>
+									</div>
+									<div class="stc-block">
+										<span>Адрес</span>
+										<div>Агротелетрейд</div>
+									</div>
+								</div>
+							</div>
+							<div class="stc-table">
+								<div class="stc-header">
+									<h5>Склад #2</h5>
+									<div class="right">
+										<input type="radio" id="stock2" name="stock">
+										<label for="stock2">Использовать этот склад</label>
+									</div>
+								</div>
+								<div class="stc-line">
+									<div class="stc-block">
+										<span>Город</span>
+										<div>Одесса</div>
+									</div>
+									<div class="stc-block">
+										<span>Штат</span>
+										<div>Одесская область</div>
+									</div>
+									<div class="stc-block">
+										<span>Адрес</span>
+										<div>Агротелетрейд</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="foo-logo col-lg-2 col-md-2">
+						<a href="#"><img src="img/shipux_logo.svg" alt="shipux"></a>
+					</div>
+					<div class="foo-text col-lg-8 col-md-8">
+						<p>Copyright @ 2017 Company LLC. Sitename trademark and sitename logo are registered to company LLC. All Rights Reserved. All other logos, brands and designated trademarks are the property of their respective holders. Use of this website requires acceptance of the Privacy Policy. TPS and Money Back Guarantee Terms.</p>
+						<div class="foo-info">
+							<span><i class="fa fa-globe" aria-hidden="true"></i>12345 51ST New York, NY 10001</span><span><i class="fa fa-phone" aria-hidden="true"></i>(123) 456-7890</span><span><i class="fa fa-envelope-o" aria-hidden="true"></i>info@sitename.com</span><span><i class="fa fa-th" aria-hidden="true"></i>Sitemap</span>
+						</div>
+					</div>
+					<div class="foo-social col-lg-2 col-md-2">
+						<ul>
+							<li class="facebook">
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li class="twitter">
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+							<li class="google">
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
