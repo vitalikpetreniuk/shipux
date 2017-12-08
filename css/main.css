@@ -399,7 +399,8 @@ header {
     header .header-bottom .mobile-account {
       display: none; }
   header .header-account {
-    display: none; }
+    display: none;
+    margin-top: 7px; }
 
 footer .row {
   padding: 40px 0;
@@ -3854,6 +3855,162 @@ ul {
     -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); }
 
+.expected-add {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; }
+  .expected-add .add-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 45px 50px 20px;
+    -webkit-border-radius: 7px;
+            border-radius: 7px; }
+    .expected-add .add-body h5 {
+      margin: 0 0 28px;
+      color: #666666;
+      font-size: 17px;
+      line-height: 18px;
+      text-transform: uppercase; }
+    .expected-add .add-body form {
+      width: 830px !important; }
+      .expected-add .add-body form label {
+        display: block;
+        margin-bottom: 9px;
+        color: #cccccc;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px; }
+      .expected-add .add-body form input[type="text"],
+      .expected-add .add-body form .jq-selectbox__select {
+        display: block;
+        border: 1px solid #eeeeee;
+        background: #fff;
+        -webkit-border-radius: 7px;
+                border-radius: 7px;
+        outline: none;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        width: 100%;
+        height: 55px;
+        line-height: 55px;
+        padding: 0 20px;
+        color: #999999;
+        font-size: 25px;
+        font-weight: 400;
+        cursor: pointer;
+        margin-bottom: 20px; }
+      .expected-add .add-body form textarea {
+        display: block;
+        border: 1px solid #eeeeee;
+        background: #fff;
+        -webkit-border-radius: 7px;
+                border-radius: 7px;
+        outline: none;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        width: 100%;
+        height: 120px;
+        line-height: 26px;
+        padding: 10px 20px;
+        color: #999999;
+        font-size: 25px;
+        font-weight: 400;
+        cursor: pointer;
+        margin-bottom: 20px; }
+      .expected-add .add-body form .jq-selectbox {
+        margin-bottom: 0;
+        width: 100%; }
+        .expected-add .add-body form .jq-selectbox .jq-selectbox__trigger {
+          position: absolute;
+          top: 55%;
+          right: 20px;
+          -webkit-transform: translateY(-55%);
+              -ms-transform: translateY(-55%);
+                  transform: translateY(-55%); }
+          .expected-add .add-body form .jq-selectbox .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+            width: 17px;
+            height: 10px;
+            background: url(../img/arr-down.png) no-repeat center; }
+        .expected-add .add-body form .jq-selectbox .jq-selectbox__dropdown {
+          display: block;
+          top: 100% !important;
+          width: 100%;
+          background: #fff;
+          border: 1px solid #eeeeee;
+          -webkit-border-radius: 7px;
+                  border-radius: 7px; }
+          .expected-add .add-body form .jq-selectbox .jq-selectbox__dropdown li {
+            border-bottom: 1px solid #eeeeee;
+            padding: 0 20px;
+            line-height: 55px;
+            color: #cccccc;
+            font-size: 25px;
+            font-weight: 400;
+            cursor: pointer; }
+    .expected-add .add-body form > div {
+      width: 400px;
+      float: left; }
+    .expected-add .add-body form > div:nth-child(2n+1) {
+      clear: left;
+      margin-right: 30px; }
+    .expected-add .add-body form > div.add-note {
+      clear: both;
+      width: 100%;
+      margin-right: 0; }
+    .expected-add .add-body form > .links {
+      display: block;
+      float: right;
+      overflow: hidden; }
+      .expected-add .add-body form > .links a.cancel {
+        text-decoration: none;
+        display: block;
+        height: 44px;
+        line-height: 50px;
+        float: left;
+        margin-right: 16px;
+        color: #666666;
+        font-family: 'Blogger_SansMedium', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase; }
+      .expected-add .add-body form > .links input[type="submit"] {
+        display: block;
+        float: left;
+        margin: 0;
+        width: 200px;
+        height: 44px;
+        line-height: 48px;
+        border: none;
+        outline: none;
+        -webkit-border-radius: 28px;
+        border-radius: 28px;
+        background-color: #fed329;
+        color: #ffffff;
+        font-family: 'Blogger_SansMedium', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase; }
+
+.expected-add.open {
+  visibility: visible;
+  opacity: 1; }
+
 /* SENT ------------------------------------------------------------------------------------------------------------- */
 .sent-top {
   padding: 60px 0 30px;
@@ -4474,6 +4631,8 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  .content .history-table .table-rows .line .h-label {
+    display: none; }
   .content .history-table .table-rows .line div {
     color: #666666;
     font-size: 17px;
