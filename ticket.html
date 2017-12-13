@@ -22,7 +22,7 @@
 </head>
 <body>
 
-	<div id="wrapper" class="ticket">
+	<div id="wrapper">
 		<header>
 			<div class="container">
 				<div class="header-top">
@@ -111,78 +111,80 @@
 				</div>
 			</div>
 		</header>
-		<div class="acc-content">
-			<div class="container">
-				<div class="sidebar">
-					<ul class="acc-nav">
-						<li><a href="balance.html">Баланс аккаунта</a></li>
-						<li>
-							<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
-							<ul class="subnav">
-								<li><a href="settings.html">Общие настройки</a></li>
-								<li><a href="address.html">Адреса</a></li>
-								<li><a href="stocklist.html">Склады</a></li>
-								<li><a href="names.html">Дополнительные имена</a></li>
-								<li><a href="#">Партнёрская программа</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Тариф аккаунта</a></li>
-						<li><a href="#">Оповещения</a></li>
-						<li class="active"><a href="tickets.html">Тикеты</a></li>
-					</ul>
-				</div>
-				<div class="content">
-					<div class="content-top">
-						<h2><i class="fa fa-angle-left"></i>Создать тикет</h2>
-					</div>
-					<div class="content-body">
-						<h5>Создайте свой запрос по интересующему вопросу</h5>
-						<form action="/" class="ticket-form">
-							<div class="t-input">
-								<label for="subject">Тема тикета</label>
-								<select name="subject" id="subject">
-									<option value="- Выберите тему тикета -">- Выберите тему тикета -</option>
-									<option value="Тема #1">Тема #1</option>
-									<option value="Тема #2">Тема #2</option>
-									<option value="Тема #3">Тема #3</option>
-									<option value="Тема #4">Тема #4</option>
-									<option value="Тема #5">Тема #5</option>
-								</select>
-							</div>
-							<div class="t-input">
-								<label for="parcel">Посылка</label>
-								<select name="parcel" id="parcel">
-									<option value="- Выберите посылку -">- Выберите посылку -</option>
-									<option value="Посылка #1">Посылка #1</option>
-									<option value="Посылка #2">Посылка #2</option>
-									<option value="Посылка #3">Посылка #3</option>
-									<option value="Посылка #4">Посылка #4</option>
-									<option value="Посылка #5">Посылка #5</option>
-								</select>
-							</div>
-							<div class="t-input">
-								<label for="name">Тема</label>
-								<input id="name" type="text" placeholder="Название темы">
-							</div>
-							<div class="t-textarea">
-								<label for="message">Описание ситуации</label>
-								<textarea id="message"></textarea>
-							</div>
-							<div class="files">
-								<span>Прикреплённые файлы</span>
-								<ul>
-									<li><span class="num">1</span><span class="title">Файл 1.jpg</span><span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
-									<li><span class="num">2</span><span class="title">Файл 2.jpg</span><span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
-									<li><span class="num">3</span><span class="title">Файл 3.jpg</span><span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
-									<li><span class="num">4</span><span class="title">Файл 4.jpg</span><span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
-									<li><span class="num">5</span><span class="title">Файл 5.jpg</span><span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
+		<div class="ticket">
+			<div class="acc-content">
+				<div class="container">
+					<div class="sidebar">
+						<ul class="acc-nav">
+							<li><a href="balance.html">Баланс аккаунта</a></li>
+							<li>
+								<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
+								<ul class="subnav">
+									<li><a href="settings.html">Общие настройки</a></li>
+									<li><a href="address.html">Адреса</a></li>
+									<li><a href="stocklist.html">Склады</a></li>
+									<li><a href="names.html">Дополнительные имена</a></li>
+									<li><a href="#">Партнёрская программа</a></li>
 								</ul>
-							</div>
-							<div class="t-footer">
-								<button>Создать тикет</button>
-								<a href="#">Отмена</a>
-							</div>
-						</form>
+							</li>
+							<li><a href="#">Тариф аккаунта</a></li>
+							<li><a href="#">Оповещения</a></li>
+							<li class="active"><a href="tickets.html">Тикеты</a></li>
+						</ul>
+					</div>
+					<div class="content">
+						<div class="content-top">
+							<h2><i class="fa fa-angle-left"></i>Создать тикет</h2>
+						</div>
+						<div class="content-body">
+							<h5>Создайте свой запрос по интересующему вопросу</h5>
+							<form action="/" class="ticket-form">
+								<div class="t-input">
+									<label for="subject">Тема тикета</label>
+									<select name="subject" id="subject">
+										<option value="- Выберите тему тикета -">- Выберите тему тикета -</option>
+										<option value="Тема #1">Тема #1</option>
+										<option value="Тема #2">Тема #2</option>
+										<option value="Тема #3">Тема #3</option>
+										<option value="Тема #4">Тема #4</option>
+										<option value="Тема #5">Тема #5</option>
+									</select>
+								</div>
+								<div class="t-input">
+									<label for="parcel">Посылка</label>
+									<select name="parcel" id="parcel">
+										<option value="- Выберите посылку -">- Выберите посылку -</option>
+										<option value="Посылка #1">Посылка #1</option>
+										<option value="Посылка #2">Посылка #2</option>
+										<option value="Посылка #3">Посылка #3</option>
+										<option value="Посылка #4">Посылка #4</option>
+										<option value="Посылка #5">Посылка #5</option>
+									</select>
+								</div>
+								<div class="t-input">
+									<label for="name">Тема</label>
+									<input id="name" type="text" placeholder="Название темы">
+								</div>
+								<div class="t-textarea">
+									<label for="message">Описание ситуации</label>
+									<textarea id="message"></textarea>
+								</div>
+								<div class="files">
+									<span>Прикреплённые файлы</span>
+									<ul>
+										<li><span class="num">1</span><span class="title">Файл 1.jpg</span><span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
+										<li><span class="num">2</span><span class="title">Файл 2.jpg</span><span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
+										<li><span class="num">3</span><span class="title">Файл 3.jpg</span><span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
+										<li><span class="num">4</span><span class="title">Файл 4.jpg</span><span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
+										<li><span class="num">5</span><span class="title">Файл 5.jpg</span><span class="delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
+									</ul>
+								</div>
+								<div class="t-footer">
+									<button>Создать тикет</button>
+									<a href="#">Отмена</a>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

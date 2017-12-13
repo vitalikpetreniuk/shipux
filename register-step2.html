@@ -56,108 +56,110 @@
 				</div>
 			</div>
 		</header>
-		<div class="reg-step2">
-			<div class="container">
-				<h1>Регистрация - Шаг 2</h1>
-				<div class="row">
-					<div class="create-acc col-lg-6 col-md-6">
-						<div class="step2">
-							<h2>Создать аккаунт</h2>
-							<form action="/" method="get">
-								<div class="column">
-									<div class="line name">
-										<div>
-											<label for="firstname">Имя</label>
-											<input type="text" id="firstname" placeholder="Иван">
+		<div>
+			<div class="reg-step2">
+				<div class="container">
+					<h1>Регистрация - Шаг 2</h1>
+					<div class="row">
+						<div class="create-acc col-lg-6 col-md-6">
+							<div class="step2">
+								<h2>Создать аккаунт</h2>
+								<form action="/" method="get">
+									<div class="column left">
+										<div class="line name">
+											<div>
+												<label for="firstname">Имя</label>
+												<input type="text" id="firstname" placeholder="Иван">
+											</div>
+											<div>
+												<label for="lastname">Фамилия</label>
+												<input type="text" id="lastname" placeholder="Петров">
+											</div>
 										</div>
-										<div>
-											<label for="lastname">Фамилия</label>
-											<input type="text" id="lastname" placeholder="Петров">
-										</div>
-									</div>
-									<label for="country">Страна</label>
-									<select id="country">
-										<option hidden disabled selected>- Ваша страна -</option>
-										<option>Россия</option>
-										<option>США</option>
-										<option>Украина</option>
-									</select>
-									<label for="email">EMAIL</label>
-									<input type="email" id="email" placeholder="Sample@gmail.com">
-									<div class="line passwords">
-										<div>
-											<label for="password">Пароль</label>
-											<input type="password" id="password" placeholder="6367892340">
-										</div>
-										<div>
-											<label for="password-repeat">Повтор пароля</label>
-											<input type="password" id="password-repeat" placeholder="6367892340">
-										</div>
-									</div>
-								</div>
-								<div class="column">
-									<div class="line check">
-										<div>
-											<input id="checkbox1" type="checkbox">
-											<label for="checkbox1">Я прочитал и принимаю условия и положения.</label>
-										</div>
-										<div>
-											<input id="checkbox2" type="checkbox">
-											<label for="checkbox2"> Подписаться на нашу рассылку</label>
+										<label for="country">Страна</label>
+										<select id="country">
+											<option hidden disabled selected>- Ваша страна -</option>
+											<option>Россия</option>
+											<option>США</option>
+											<option>Украина</option>
+										</select>
+										<label for="email">EMAIL</label>
+										<input type="email" id="email" placeholder="Sample@gmail.com">
+										<div class="line passwords">
+											<div>
+												<label for="password">Пароль</label>
+												<input type="password" id="password" placeholder="6367892340">
+											</div>
+											<div>
+												<label for="password-repeat">Повтор пароля</label>
+												<input type="password" id="password-repeat" placeholder="6367892340">
+											</div>
 										</div>
 									</div>
-									<div class="line radiobuttons">
-										<div>
-											<input type="radio" id="registerChoice1" name="contact" value="email">
-											<label for="registerChoice1">Виртуальный почтовый ящик   <span>Годовая подписка ($50 в год)</span></label>
+									<div class="column right">
+										<div class="line check">
+											<div>
+												<input id="checkbox1" type="checkbox">
+												<label for="checkbox1">Я прочитал и принимаю условия и положения.</label>
+											</div>
+											<div>
+												<input id="checkbox2" type="checkbox">
+												<label for="checkbox2"> Подписаться на нашу рассылку</label>
+											</div>
 										</div>
-										<div>
-											<input type="radio" id="registerChoice2" name="contact" value="email">
-											<label for="registerChoice2">  Виртуальный почтовый ящик в месяц  <span>($ 10 в месяц)</span></label>
+										<div class="line radiobuttons">
+											<div>
+												<input type="radio" id="registerChoice1" name="contact" value="email">
+												<label for="registerChoice1">Виртуальный почтовый ящик   <span>Годовая подписка ($50 в год)</span></label>
+											</div>
+											<div>
+												<input type="radio" id="registerChoice2" name="contact" value="email">
+												<label for="registerChoice2">  Виртуальный почтовый ящик в месяц  <span>($ 10 в месяц)</span></label>
+											</div>
+											<div>
+												<input type="radio" id="registerChoice3" name="contact" value="email">
+												<label for="registerChoice3">Отдельные посылки   <span>Бесплатно</span></label>
+											</div>
+											<div class="clear"></div>
 										</div>
-										<div>
-											<input type="radio" id="registerChoice3" name="contact" value="email">
-											<label for="registerChoice3">Отдельные посылки   <span>Бесплатно</span></label>
-										</div>
-										<div class="clear"></div>
+										<span class="note">С выбранным тарифом Вы не получите доступ к нашему складу в безналоговом штате Орегон и Вам будет недоступна услуга консолидации. Вы можете изменить свой тариф в виртуальный почтовый ящик позднее в личном кабинете.</span>
 									</div>
-									<span class="note">С выбранным тарифом Вы не получите доступ к нашему складу в безналоговом штате Орегон и Вам будет недоступна услуга консолидации. Вы можете изменить свой тариф в виртуальный почтовый ящик позднее в личном кабинете.</span>
-								</div>
-								<button type="submit">создать аккаунт</button>
-							</form>
+									<button type="submit">создать аккаунт</button>
+								</form>
+							</div>
 						</div>
-					</div>
-					<div class="create-process col-lg-6 col-md-6">
-						<h6>Как это работает?</h6>
-						<div class="steps">
-							<div class="step">
-								<span class="num">1</span>
-								<div class="img">
-									<img src="img/reg21.png" alt="img">
+						<div class="create-process col-lg-6 col-md-6">
+							<h6>Как это работает?</h6>
+							<div class="steps">
+								<div class="step">
+									<span class="num">1</span>
+									<div class="img">
+										<img src="img/reg21.png" alt="img">
+									</div>
+									<div class="info">
+										<div class="title">Зарегистрируйтесь  и получите адрес  ShipUX в США</div>
+										<p>Это будет ваш личный адрес в США. <br> Нет платы за регистрацию.</p>
+									</div>
 								</div>
-								<div class="info">
-									<div class="title">Зарегистрируйтесь  и получите адрес  ShipUX в США</div>
-									<p>Это будет ваш личный адрес в США. <br> Нет платы за регистрацию.</p>
+								<div class="step">
+									<span class="num">2</span>
+									<div class="img">
+										<img src="img/reg22.png" alt="img">
+									</div>
+									<div class="info">
+										<div class="title">Покупайте в любом  магазине США и  отправляйте товар  на ваш новый адрес США</div>
+										<p>Используйте свой адрес ShipUX США в  <br>качестве адреса доставки при оформлении заказа.</p>
+									</div>
 								</div>
-							</div>
-							<div class="step">
-								<span class="num">2</span>
-								<div class="img">
-									<img src="img/reg22.png" alt="img">
-								</div>
-								<div class="info">
-									<div class="title">Покупайте в любом  магазине США и  отправляйте товар  на ваш новый адрес США</div>
-									<p>Используйте свой адрес ShipUX США в  <br>качестве адреса доставки при оформлении заказа.</p>
-								</div>
-							</div>
-							<div class="step">
-								<span class="num">3</span>
-								<div class="img">
-									<img src="img/reg23.png" alt="img">
-								</div>
-								<div class="info">
-									<div class="title">Объединяйте свои посылки  и экономьте деньги</div>
-									<p>Покупайте в нескольких онлайн магазинах,  <br>объединяйте до 80% на доставке.</p>
+								<div class="step">
+									<span class="num">3</span>
+									<div class="img">
+										<img src="img/reg23.png" alt="img">
+									</div>
+									<div class="info">
+										<div class="title">Объединяйте свои посылки  и экономьте деньги</div>
+										<p>Покупайте в нескольких онлайн магазинах,  <br>объединяйте до 80% на доставке.</p>
+									</div>
 								</div>
 							</div>
 						</div>

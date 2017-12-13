@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #FFFFFF;
   font-family: 'Blogger_Sans', sans-serif; }
@@ -109,6 +110,7 @@ header {
         display: none;
         cursor: default;
         position: absolute;
+        z-index: 100;
         top: -webkit-calc(100% + 10px);
         top: calc(100% + 10px);
         right: -25px;
@@ -1012,9 +1014,9 @@ ul {
       text-align: justify; }
     .gray-info .column p:last-child {
       margin-bottom: 35px; }
-  .gray-info .column:nth-child(1) {
+  .gray-info .column.left {
     margin-right: 15px; }
-  .gray-info .column:nth-child(2) {
+  .gray-info .column.right {
     margin-left: 15px; }
   .gray-info .gray-button {
     display: block;
@@ -1933,6 +1935,8 @@ ul {
         font-weight: 400; }
     .reg-step1 .reg-free .type-link,
     .reg-step1 .reg-paid .type-link {
+      background: none;
+      border: none;
       margin: 25px 0;
       display: inline-block;
       color: #fed329;
@@ -1947,10 +1951,10 @@ ul {
         right: -20px;
         font-size: 17px;
         font-weight: 400;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%); }
+        top: 30%;
+        -webkit-transform: translateY(-30%);
+            -ms-transform: translateY(-30%);
+                transform: translateY(-30%); }
   .reg-step1 .reg-paid .in-type {
     border: 4px solid #1dbcc1;
     margin-top: 2px;
@@ -1981,7 +1985,7 @@ ul {
     font-family: 'Blogger_SansMedium', sans-serif;
     font-size: 17px;
     font-weight: 500;
-    line-height: 45px;
+    line-height: 50px;
     text-transform: uppercase; }
 
 .reg-step2 {
@@ -6290,3 +6294,51 @@ ul {
     .settings-menu .settings-menu-body ul li a i {
       font-size: 30px;
       color: #1dbcc1; }
+
+/* social temporary ------------------------------------------------------------------------------------------------- */
+.auth-clients {
+  margin: 0; }
+  .auth-clients li {
+    display: block;
+    max-width: 340px;
+    margin: 0 auto;
+    float: none; }
+    .auth-clients li a {
+      display: block;
+      height: 45px;
+      -webkit-border-radius: 22px;
+      border-radius: 22px;
+      color: #ffffff;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 51px;
+      text-transform: uppercase;
+      padding-left: 70px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      text-align: left; }
+      .auth-clients li a span {
+        display: none !important; }
+    .auth-clients li a.google {
+      background: #4285f4 url(../img/google-acc.jpg) no-repeat 20px center; }
+    .auth-clients li a.google:before {
+      content: 'Войти через Google Аккаунт'; }
+    .auth-clients li a.facebook {
+      background: #3b5998 url(../img/facebook-acc.jpg) no-repeat 20px center;
+      margin-bottom: 0; }
+    .auth-clients li a.facebook:before {
+      content: 'Войти через Facebook Аккаунт'; }
+  .auth-clients li:before {
+    text-align: center;
+    display: block;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px; }
+  .auth-clients li:nth-child(1):before {
+    content: 'Используй google аккаунт чтобы войти в ShipUx'; }
+  .auth-clients li:nth-child(2):before {
+    content: 'Используй facebook аккаунт чтобы войти в ShipUx'; }

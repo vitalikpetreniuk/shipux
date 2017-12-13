@@ -22,7 +22,7 @@
 </head>
 <body>
 
-	<div id="wrapper" class="calculate">
+	<div id="wrapper">
 		<header>
 			<div class="container">
 				<div class="header-top">
@@ -58,131 +58,133 @@
 				</div>
 			</div>
 		</header>
-		<div class="calculate-top">
-			<div class="container">
-				<h1>Калькулятор доставки</h1>
-				<h5>Узнайте точную стоимость доставки из США</h5>
+		<div class="calculate">
+			<div class="calculate-top">
+				<div class="container">
+					<h1>Калькулятор доставки</h1>
+					<h5>Узнайте точную стоимость доставки из США</h5>
+				</div>
 			</div>
-		</div>
-		<div class="calculate-body">
-			<div class="container">
-				<form action="/" method="get">
-					<div class="form-top">
-						<div class="stock">
-							<label for="stock">Склад</label>
-							<select id="stock">
-								<option hidden disabled selected>- Выберите склад -</option>
-								<option>Склад №1</option>
-								<option>Склад №2</option>
-								<option>Склад №3</option>
-								<option>Склад №4</option>
-								<option>Склад №5</option>
-								<option>Склад №6</option>
-							</select>
+			<div class="calculate-body">
+				<div class="container">
+					<form action="/" method="get">
+						<div class="form-top">
+							<div class="stock">
+								<label for="stock">Склад</label>
+								<select id="stock">
+									<option hidden disabled selected>- Выберите склад -</option>
+									<option>Склад №1</option>
+									<option>Склад №2</option>
+									<option>Склад №3</option>
+									<option>Склад №4</option>
+									<option>Склад №5</option>
+									<option>Склад №6</option>
+								</select>
+							</div>
+							<div class="country">
+								<label for="country">Страна</label>
+								<select id="country">
+									<option hidden disabled selected>- Выберите страну доставки -</option>
+									<option>Украина</option>
+									<option>Ирландия</option>
+									<option>США</option>
+									<option>Уругвай</option>
+									<option>Испания</option>
+									<option>Шотландия</option>
+								</select>
+							</div>
+							<div class="city">
+								<label for="city">Город</label>
+								<select id="city">
+									<option hidden disabled selected>- Выберите город -</option>
+									<option>Одесса</option>
+									<option>Луцк</option>
+									<option>Киев</option>
+									<option>Черновцы</option>
+									<option>Ивано-Франковск</option>
+									<option>Тернополь</option>
+								</select>
+							</div>
+							<div class="index">
+								<label for="index">Индекс</label>
+								<input type="text" id="index">
+							</div>
+							<span class="clear"></span>
 						</div>
-						<div class="country">
-							<label for="country">Страна</label>
-							<select id="country">
-								<option hidden disabled selected>- Выберите страну доставки -</option>
-								<option>Украина</option>
-								<option>Ирландия</option>
-								<option>США</option>
-								<option>Уругвай</option>
-								<option>Испания</option>
-								<option>Шотландия</option>
-							</select>
+						<div class="form-parcel">
+							<h4>Параметры посылки</h4>
+							<div class="length">
+								<label for="length">Длина</label>
+								<input type="text" id="length">
+							</div>
+							<div class="width">
+								<label for="width">Ширина</label>
+								<input type="text" id="width">
+							</div>
+							<div class="height">
+								<label for="height">Высота</label>
+								<input type="text" id="height">
+							</div>
+							<div class="units">
+								<label for="units">Высота</label>
+								<select id="units">
+									<option selected>mm</option>
+									<option>sm</option>
+									<option>m</option>
+								</select>
+							</div>
+							<span class="clear"></span>
+							<div class="weight">
+								<label for="weight">Вес товара</label>
+								<input type="text" id="weight" value="1">
+								<div class="weight units">
+									<select id="weight-units">
+										<option selected>kg</option>
+										<option>lb</option>
+									</select>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="price">
+								<label for="price">Стоимость</label>
+								<input type="text" id="price" value="1">
+								<div class="price units">
+									<select id="price-units">
+										<option selected>$</option>
+										<option>€</option>
+										<option>£</option>
+									</select>
+								</div>
+								<div class="clear"></div>
+							</div>
 						</div>
-						<div class="city">
-							<label for="city">Город</label>
-							<select id="city">
-								<option hidden disabled selected>- Выберите город -</option>
-								<option>Одесса</option>
-								<option>Луцк</option>
-								<option>Киев</option>
-								<option>Черновцы</option>
-								<option>Ивано-Франковск</option>
-								<option>Тернополь</option>
-							</select>
+						<div class="form-list">
+							<ul>
+								<li>
+									<span class="name">Ориентировочная сумма таможенных платежей </span>
+									<span class="price">$89.60</span>
+								</li>
+								<li>
+									<span class="name">Международная доставка</span>
+									<span class="price"> $689.30</span>
+								</li>
+								<li>
+									<span class="name"> Сборы ShipUx</span>
+									<span class="price"> + $10.00 </span>
+								</li>
+								<li>
+									<span class="name"> Услуга «Упаковать вместе» </span>
+									<span class="price"> + $4.12 </span>
+								</li>
+								<li>
+									<span class="name">Всего</span>
+									<span class="price full">$1245.12</span>
+								</li>
+							</ul>
 						</div>
-						<div class="index">
-							<label for="index">Индекс</label>
-							<input type="text" id="index">
-						</div>
-						<span class="clear"></span>
-					</div>
-					<div class="form-parcel">
-						<h4>Параметры посылки</h4>
-						<div class="length">
-							<label for="length">Длина</label>
-							<input type="text" id="length">
-						</div>
-						<div class="width">
-							<label for="width">Ширина</label>
-							<input type="text" id="width">
-						</div>
-						<div class="height">
-							<label for="height">Высота</label>
-							<input type="text" id="height">
-						</div>
-						<div class="units">
-							<label for="units">Высота</label>
-							<select id="units">
-								<option selected>mm</option>
-								<option>sm</option>
-								<option>m</option>
-							</select>
-						</div>
-						<span class="clear"></span>
-                        <div class="weight">
-                            <label for="weight">Вес товара</label>
-                            <input type="text" id="weight" value="1">
-                            <div class="weight units">
-                                <select id="weight-units">
-                                    <option selected>kg</option>
-                                    <option>lb</option>
-                                </select>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                        <div class="price">
-                            <label for="price">Стоимость</label>
-                            <input type="text" id="price" value="1">
-                            <div class="price units">
-                                <select id="price-units">
-                                    <option selected>$</option>
-                                    <option>€</option>
-                                    <option>£</option>
-                                </select>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-					</div>
-					<div class="form-list">
-						<ul>
-							<li>
-								<span class="name">Ориентировочная сумма таможенных платежей </span>
-								<span class="price">$89.60</span>
-							</li>
-							<li>
-								<span class="name">Международная доставка</span>
-								<span class="price"> $689.30</span>
-							</li>
-							<li>
-								<span class="name"> Сборы ShipUx</span>
-								<span class="price"> + $10.00 </span>
-							</li>
-							<li>
-								<span class="name"> Услуга «Упаковать вместе» </span>
-								<span class="price"> + $4.12 </span>
-							</li>
-							<li>
-								<span class="name">Всего</span>
-								<span class="price full">$1245.12</span>
-							</li>
-						</ul>
-					</div>
-					<span class="starred">* Якщо загальна сума вашого замовлення перевищує $160.00, вам  необхідно оплатити 35% від суми перевищення ліміту*</span>
-				</form>
+						<span class="starred">* Якщо загальна сума вашого замовлення перевищує $160.00, вам  необхідно оплатити 35% від суми перевищення ліміту*</span>
+					</form>
+				</div>
 			</div>
 		</div>
 		<footer>

@@ -22,7 +22,7 @@
 </head>
 <body>
 
-	<div id="wrapper" class="tariff edit">
+	<div id="wrapper">
 		<header>
 			<div class="container">
 				<div class="header-top">
@@ -111,97 +111,99 @@
 				</div>
 			</div>
 		</header>
-		<div class="acc-content">
-			<div class="container">
-				<div class="sidebar">
-					<ul class="acc-nav">
-						<li><a href="#">Баланс аккаунта</a></li>
-						<li>
-							<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
-							<ul class="subnav">
-								<li><a href="#">Общие настройки</a></li>
-								<li><a href="#">Адреса</a></li>
-								<li><a href="#">Склады</a></li>
-								<li><a href="#">Дополнительные имена</a></li>
-								<li><a href="#">Партнёрская программа</a></li>
-							</ul>
-						</li>
-						<li class="active"><a href="#">Тариф аккаунта</a></li>
-						<li><a href="#">Оповещения</a></li>
-						<li><a href="#">Тикеты</a></li>
-					</ul>
-				</div>
-				<div class="content">
-					<div class="content-top">
-						<h2><i class="fa fa-angle-left"></i>Изменение тарифа аккаунта</h2>
+		<div class="tariff edit">
+			<div class="acc-content">
+				<div class="container">
+					<div class="sidebar">
+						<ul class="acc-nav">
+							<li><a href="#">Баланс аккаунта</a></li>
+							<li>
+								<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
+								<ul class="subnav">
+									<li><a href="#">Общие настройки</a></li>
+									<li><a href="#">Адреса</a></li>
+									<li><a href="#">Склады</a></li>
+									<li><a href="#">Дополнительные имена</a></li>
+									<li><a href="#">Партнёрская программа</a></li>
+								</ul>
+							</li>
+							<li class="active"><a href="#">Тариф аккаунта</a></li>
+							<li><a href="#">Оповещения</a></li>
+							<li><a href="#">Тикеты</a></li>
+						</ul>
 					</div>
-					<div class="content-body">
-						<div class="line type">
-							<div class="header">
-								<h5>Текущий тип аккаунта</h5>
-								<div class="change"><a href="#">Изменить пакет<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
-							</div>
-							<div class="body">
-								<div>Индивидуальный пакет</div>
-								<div>
-									<span>Период действия</span>
-									<div>
-										<span>с</span>Мар. 15, 2017<br>
-										<span>по</span>Апр. 15, 2017
-									</div>
-								</div>
-								<div>
-									<span>Стоимость</span>
-									<div>$4.17 / мес.</div>
-								</div>
-								<div>
-									<span>Коммисия</span>
-									<div>$10.00 / единоразово</div>
-								</div>
-							</div>
+					<div class="content">
+						<div class="content-top">
+							<h2><i class="fa fa-angle-left"></i>Изменение тарифа аккаунта</h2>
 						</div>
-						<form class="tariff-edit">
-							<div class="plans">
-								<div class="plan non-virtual">
-									<div class="plan-title">Индивидуальные пакеты</div>
-									<div class="plan-price">
-										<input type="radio" id="type1" name="type" checked>
-										<p>Бесплатно<span>Текущий план</span></p>
-									</div>
-									<ul class="plan-info">
-										<li><i class="fa fa-check" aria-hidden="true"></i>Ваш собственный адрес в США </li>
-										<li><i class="fa fa-check" aria-hidden="true"></i>До 80% скидки на доставку</li>
-										<li><i class="fa fa-check" aria-hidden="true"></i>Бесплатное хранение до 180 дней  <br>(только склад в Minden, NV)  </li>
-										<li><i class="fa fa-check" aria-hidden="true"></i>$2 за посылку + стоимость доставки   </li>
-									</ul>
-									<span>Отличия пакетов</span>
-									<ul class="plan-differences">
-										<li><i class="fa fa-check" aria-hidden="true"></i>Только один пакет на складе</li>
-										<li> <i class="fa fa-check" aria-hidden="true"></i>$0 в год</li>
-									</ul>
+						<div class="content-body">
+							<div class="line type">
+								<div class="header">
+									<h5>Текущий тип аккаунта</h5>
+									<div class="change"><a href="#">Изменить пакет<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
 								</div>
-								<div class="plan virtual">
-									<div class="plan-title">Виртуальный  почтовый ящик</div>
-									<div class="plan-price">
-										<input type="radio" id="type2" name="type">
-										<p>$ 4.17 в месяц<span>при оплате за год или $10 каждый месяц</span></p>
+								<div class="body">
+									<div>Индивидуальный пакет</div>
+									<div>
+										<span>Период действия</span>
+										<div>
+											<span>с</span>Мар. 15, 2017<br>
+											<span>по</span>Апр. 15, 2017
+										</div>
 									</div>
-									<ul class="plan-info">
-										<li><i class="fa fa-check" aria-hidden="true"></i>Ваш собственный адрес в США </li>
-										<li><i class="fa fa-check" aria-hidden="true"></i>До 80% скидки на доставку</li>
-										<li> <i class="fa fa-check" aria-hidden="true"></i>Бесплатное хранение до 180 дней  <br>(только склад в Minden, NV)  </li>
-										<li><i class="fa fa-check" aria-hidden="true"></i>$2 за посылку + стоимость доставки   </li>
-									</ul>
-									<span>Отличия пакетов</span>
-									<ul class="plan-differences">
-										<li><i class="fa fa-check" aria-hidden="true"></i>Несколько пакетов на складе</li>
-										<li><i class="fa fa-check" aria-hidden="true"></i>Консолидация посылок</li>
-										<li><i class="fa fa-check" aria-hidden="true"></i>0% налог с продаж на складе в Орегоне</li>
-									</ul>
+									<div>
+										<span>Стоимость</span>
+										<div>$4.17 / мес.</div>
+									</div>
+									<div>
+										<span>Коммисия</span>
+										<div>$10.00 / единоразово</div>
+									</div>
 								</div>
-								<div class="clear"></div>
 							</div>
-						</form>
+							<form class="tariff-edit">
+								<div class="plans">
+									<div class="plan non-virtual">
+										<div class="plan-title">Индивидуальные пакеты</div>
+										<div class="plan-price">
+											<input type="radio" id="type1" name="type" checked>
+											<p>Бесплатно<span>Текущий план</span></p>
+										</div>
+										<ul class="plan-info">
+											<li><i class="fa fa-check" aria-hidden="true"></i>Ваш собственный адрес в США </li>
+											<li><i class="fa fa-check" aria-hidden="true"></i>До 80% скидки на доставку</li>
+											<li><i class="fa fa-check" aria-hidden="true"></i>Бесплатное хранение до 180 дней  <br>(только склад в Minden, NV)  </li>
+											<li><i class="fa fa-check" aria-hidden="true"></i>$2 за посылку + стоимость доставки   </li>
+										</ul>
+										<span>Отличия пакетов</span>
+										<ul class="plan-differences">
+											<li><i class="fa fa-check" aria-hidden="true"></i>Только один пакет на складе</li>
+											<li> <i class="fa fa-check" aria-hidden="true"></i>$0 в год</li>
+										</ul>
+									</div>
+									<div class="plan virtual">
+										<div class="plan-title">Виртуальный  почтовый ящик</div>
+										<div class="plan-price">
+											<input type="radio" id="type2" name="type">
+											<p>$ 4.17 в месяц<span>при оплате за год или $10 каждый месяц</span></p>
+										</div>
+										<ul class="plan-info">
+											<li><i class="fa fa-check" aria-hidden="true"></i>Ваш собственный адрес в США </li>
+											<li><i class="fa fa-check" aria-hidden="true"></i>До 80% скидки на доставку</li>
+											<li> <i class="fa fa-check" aria-hidden="true"></i>Бесплатное хранение до 180 дней  <br>(только склад в Minden, NV)  </li>
+											<li><i class="fa fa-check" aria-hidden="true"></i>$2 за посылку + стоимость доставки   </li>
+										</ul>
+										<span>Отличия пакетов</span>
+										<ul class="plan-differences">
+											<li><i class="fa fa-check" aria-hidden="true"></i>Несколько пакетов на складе</li>
+											<li><i class="fa fa-check" aria-hidden="true"></i>Консолидация посылок</li>
+											<li><i class="fa fa-check" aria-hidden="true"></i>0% налог с продаж на складе в Орегоне</li>
+										</ul>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

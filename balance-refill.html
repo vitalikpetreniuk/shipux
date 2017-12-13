@@ -21,7 +21,7 @@
 	<script src="js/custom.js"></script>
 </head>
 <body>
-	<div id="wrapper" class="refill">
+	<div id="wrapper">
 		<header>
 			<div class="container">
 				<div class="header-top">
@@ -110,113 +110,115 @@
 				</div>
 			</div>
 		</header>
-		<div class="acc-content">
-			<div class="container">
-				<div class="sidebar">
-					<ul class="acc-nav">
-						<li class="active"><a href="#">Баланс аккаунта</a></li>
-						<li>
-							<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
-							<ul class="subnav">
-								<li><a href="#">Общие настройки</a></li>
-								<li><a href="#">Адреса</a></li>
-								<li><a href="#">Склады</a></li>
-								<li><a href="#">Дополнительные имена</a></li>
-								<li><a href="#">Партнёрская программа</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Тариф аккаунта</a></li>
-						<li><a href="#">Оповещения</a></li>
-						<li><a href="#">Тикеты</a></li>
-					</ul>
-				</div>
-				<div class="content">
-					<div class="content-top">
-						<h2><i class="fa fa-angle-left"></i>Балланс аккаунта:<span>$72.17</span></h2>
-						<div class="debt">Задолженность: -$27.00</div>
+		<div class="refill">
+			<div class="acc-content">
+				<div class="container">
+					<div class="sidebar">
+						<ul class="acc-nav">
+							<li class="active"><a href="#">Баланс аккаунта</a></li>
+							<li>
+								<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
+								<ul class="subnav">
+									<li><a href="#">Общие настройки</a></li>
+									<li><a href="#">Адреса</a></li>
+									<li><a href="#">Склады</a></li>
+									<li><a href="#">Дополнительные имена</a></li>
+									<li><a href="#">Партнёрская программа</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Тариф аккаунта</a></li>
+							<li><a href="#">Оповещения</a></li>
+							<li><a href="#">Тикеты</a></li>
+						</ul>
 					</div>
-					<div class="content-body">
-						<form action="/">
-							<div class="refill-amount">
-								<h5>Сумма пополнения</h5>
-								<select name="refill" id="refill">
-									<option value="$">$</option>
-									<option value="€">€</option>
-									<option value="£">£</option>
-								</select>
-								<input type="text" placeholder="20.00">
-							</div>
-							<div class="payment-method">
-								<h5>Способ оплаты</h5>
-								<div class="payment-system">
-									<span>Выберите платёжную систему</span>
-									<ul class="payment">
-										<li class="active"><img src="img/payment1.png" alt="payment"></li>
-										<li><img src="img/payment2.png" alt="payment"></li>
-										<li><img src="img/payment3.png" alt="payment"></li>
-										<li><img src="img/payment4.png" alt="payment"></li>
-										<li><img src="img/payment5.png" alt="payment"></li>
-									</ul>
+					<div class="content">
+						<div class="content-top">
+							<h2><i class="fa fa-angle-left"></i>Балланс аккаунта:<span>$72.17</span></h2>
+							<div class="debt">Задолженность: -$27.00</div>
+						</div>
+						<div class="content-body">
+							<form action="/">
+								<div class="refill-amount">
+									<h5>Сумма пополнения</h5>
+									<select name="refill" id="refill">
+										<option value="$">$</option>
+										<option value="€">€</option>
+										<option value="£">£</option>
+									</select>
+									<input type="text" placeholder="20.00">
 								</div>
-							</div>
-							<div class="refill-address">
-								<h5>Адрес</h5>
-								<div class="address-form">
-									<div class="line">
-										<label for="country">Страна</label>
-										<input type="text" id="country" placeholder="Украина">
-									</div>
-									<div class="line">
-										<label for="region">Область</label>
-										<input type="text" id="region" placeholder="Одесская">
-									</div>
-									<div class="line">
-										<label for="city">Город</label>
-										<input type="text" id="city" placeholder="Одесса">
-									</div>
-									<div class="line">
-										<label for="street">Улица</label>
-										<input type="text" id="street" placeholder="Шевченка">
-									</div>
-									<div class="line">
-										<label for="country">дом</label>
-										<input type="text" id="house" placeholder="57">
-									</div>
-									<div class="line">
-										<label for="flat">Квартира</label>
-										<input type="text" id="flat" placeholder="5">
+								<div class="payment-method">
+									<h5>Способ оплаты</h5>
+									<div class="payment-system">
+										<span>Выберите платёжную систему</span>
+										<ul class="payment">
+											<li class="active"><img src="img/payment1.png" alt="payment"></li>
+											<li><img src="img/payment2.png" alt="payment"></li>
+											<li><img src="img/payment3.png" alt="payment"></li>
+											<li><img src="img/payment4.png" alt="payment"></li>
+											<li><img src="img/payment5.png" alt="payment"></li>
+										</ul>
 									</div>
 								</div>
-							</div>
-							<div class="credit-card">
-								<h5>Данные карты</h5>
-								<div class="card-info">
-									<div class="card-number">
-										<label for="number">номер карты</label>
-										<input id="number" type="number" placeholder="1234  5678  1234  5678">
-									</div>
-									<div class="card-expires">
-										<span></span>
-										<label>Срок действия</label>
-										<input type="number" placeholder="02">
-										<span>/</span>
-										<input type="number" placeholder="19">
-									</div>
-									<div class="card-cvv2">
-										<span>СVV2 / СVС2</span>
-										<input type="number" placeholder="198">
+								<div class="refill-address">
+									<h5>Адрес</h5>
+									<div class="address-form">
+										<div class="line">
+											<label for="country">Страна</label>
+											<input type="text" id="country" placeholder="Украина">
+										</div>
+										<div class="line">
+											<label for="region">Область</label>
+											<input type="text" id="region" placeholder="Одесская">
+										</div>
+										<div class="line">
+											<label for="city">Город</label>
+											<input type="text" id="city" placeholder="Одесса">
+										</div>
+										<div class="line">
+											<label for="street">Улица</label>
+											<input type="text" id="street" placeholder="Шевченка">
+										</div>
+										<div class="line">
+											<label for="country">дом</label>
+											<input type="text" id="house" placeholder="57">
+										</div>
+										<div class="line">
+											<label for="flat">Квартира</label>
+											<input type="text" id="flat" placeholder="5">
+										</div>
 									</div>
 								</div>
-								<div class="cvv2-info">
-									<span>Пример CVV2 /CVC2 Number</span>
-									<img src="img/credit-card.png" alt="card">
+								<div class="credit-card">
+									<h5>Данные карты</h5>
+									<div class="card-info">
+										<div class="card-number">
+											<label for="number">номер карты</label>
+											<input id="number" type="number" placeholder="1234  5678  1234  5678">
+										</div>
+										<div class="card-expires">
+											<span></span>
+											<label>Срок действия</label>
+											<input type="number" placeholder="02">
+											<span>/</span>
+											<input type="number" placeholder="19">
+										</div>
+										<div class="card-cvv2">
+											<span>СVV2 / СVС2</span>
+											<input type="number" placeholder="198">
+										</div>
+									</div>
+									<div class="cvv2-info">
+										<span>Пример CVV2 /CVC2 Number</span>
+										<img src="img/credit-card.png" alt="card">
+									</div>
 								</div>
-							</div>
-							<div class="balance-footer">
-								<a href="#">Отменить</a>
-								<button>добавить депозит <i class="fa fa-credit-card-alt" aria-hidden="true"></i></button>
-							</div>
-						</form>
+								<div class="balance-footer">
+									<a href="#">Отменить</a>
+									<button>добавить депозит <i class="fa fa-credit-card-alt" aria-hidden="true"></i></button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

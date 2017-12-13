@@ -20,7 +20,7 @@
 </head>
 <body>
 
-	<div id="wrapper" class="help h-form">
+	<div id="wrapper">
 		<header>
 			<div class="container">
 				<div class="header-top">
@@ -59,72 +59,74 @@
 				</div>
 			</div>
 		</header>
-		<div class="help-top">
-			<div class="container">
-				<div class="help-img"><img src="img/help-img.png" alt="help-img"></div>
-				<h1>Помощь в покупке</h1>
-				<h5>Давайте сделаем вашу покупку лёгкой</h5>
+		<div class="help h-form">
+			<div class="help-top">
+				<div class="container">
+					<div class="help-img"><img src="img/help-img.png" alt="help-img"></div>
+					<h1>Помощь в покупке</h1>
+					<h5>Давайте сделаем вашу покупку лёгкой</h5>
+				</div>
 			</div>
-		</div>
-		<div class="help-form">
-			<div class="container">
-				<form action="/" method="get">
-					<div class="form-left">
-						<div class="site-name">
-							<label for="site-name">Название сайта</label>
-							<input id="site-name" type="text" placeholder="Амазон">
+			<div class="help-form">
+				<div class="container">
+					<form action="/" method="get">
+						<div class="form-left">
+							<div class="site-name">
+								<label for="site-name">Название сайта</label>
+								<input id="site-name" type="text" placeholder="Амазон">
+							</div>
+							<div class="product-name">
+								<label for="product-name">Название товара</label>
+								<input id="product-name" type="text" placeholder="Штаны">
+							</div>
+							<div class="product-link">
+								<label for="product-link">Ссылка на товар</label>
+								<input id="product-link" type="text" placeholder="www.wehyuiwjk.com">
+							</div>
+							<div class="shipping">
+								<label for="shipping">Местная доставка / сборы</label>
+								<input id="shipping" type="text" placeholder="$ 5.14">
+							</div>
+							<div class="stock">
+								<label for="stock">Куда отправлять заказ?</label>
+								<select id="stock">
+									<option selected>Склад №1 (Орегон)</option>
+									<option>Склад №2 (Тенесси)</option>
+									<option>Склад №3 (Кентуки)</option>
+									<option>Склад №4 (Джорджия)</option>
+								</select>
+							</div>
 						</div>
-						<div class="product-name">
-							<label for="product-name">Название товара</label>
-							<input id="product-name" type="text" placeholder="Штаны">
+						<div class="form-right">
+							<div class="site-url">
+								<label for="site-url">URL caйта</label>
+								<input id="site-url" type="text" placeholder="www.amazon.com">
+							</div>
+							<div class="product-options">
+								<label for="product-options">Опции товара</label>
+								<input id="product-options" type="text" placeholder="Шевченка">
+							</div>
+							<div class="product-price halfsize">
+								<label for="product-price">Цена за ед.</label>
+								<input id="product-price" type="text" placeholder="$ 5.14">
+							</div>
+							<div class="product-qua halfsize">
+								<label for="product-qua">кол-во, шт.</label>
+								<input id="product-qua" type="text" placeholder="65">
+							</div>
+							<div class="product-tax">
+								<label for="product-tax">Местные налоги</label>
+								<input id="product-tax" type="text" placeholder="$ 5.14">
+							</div>
+							<div class="product-instructions">
+								<label for="product-instructions">Инструкции по покупке</label>
+								<input id="product-instructions" type="text" placeholder="Текст описания...">
+							</div>
 						</div>
-						<div class="product-link">
-							<label for="product-link">Ссылка на товар</label>
-							<input id="product-link" type="text" placeholder="www.wehyuiwjk.com">
-						</div>
-						<div class="shipping">
-							<label for="shipping">Местная доставка / сборы</label>
-							<input id="shipping" type="text" placeholder="$ 5.14">
-						</div>
-						<div class="stock">
-							<label for="stock">Куда отправлять заказ?</label>
-							<select id="stock">
-								<option selected>Склад №1 (Орегон)</option>
-								<option>Склад №2 (Тенесси)</option>
-								<option>Склад №3 (Кентуки)</option>
-								<option>Склад №4 (Джорджия)</option>
-							</select>
-						</div>
-					</div>
-					<div class="form-right">
-						<div class="site-url">
-							<label for="site-url">URL caйта</label>
-							<input id="site-url" type="text" placeholder="www.amazon.com">
-						</div>
-						<div class="product-options">
-							<label for="product-options">Опции товара</label>
-							<input id="product-options" type="text" placeholder="Шевченка">
-						</div>
-						<div class="product-price halfsize">
-							<label for="product-price">Цена за ед.</label>
-							<input id="product-price" type="text" placeholder="$ 5.14">
-						</div>
-						<div class="product-qua halfsize">
-							<label for="product-qua">кол-во, шт.</label>
-							<input id="product-qua" type="text" placeholder="65">
-						</div>
-						<div class="product-tax">
-							<label for="product-tax">Местные налоги</label>
-							<input id="product-tax" type="text" placeholder="$ 5.14">
-						</div>
-						<div class="product-instructions">
-							<label for="product-instructions">Инструкции по покупке</label>
-							<input id="product-instructions" type="text" placeholder="Текст описания...">
-						</div>
-					</div>
-					<div class="clear"></div>
-					<button type="submit">создать покупку</button>
-				</form>
+						<div class="clear"></div>
+						<button type="submit">создать покупку</button>
+					</form>
+				</div>
 			</div>
 		</div>
 		<footer>

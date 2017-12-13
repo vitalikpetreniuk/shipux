@@ -22,7 +22,7 @@
 </head>
 <body>
 
-	<div id="wrapper" class="settings">
+	<div id="wrapper">
 		<header>
 			<div class="container">
 				<div class="header-top">
@@ -115,212 +115,214 @@
 				</div>
 			</div>
 		</header>
-		<div class="acc-content">
-			<div class="container">
-				<div class="sidebar">
-					<ul class="acc-nav">
-						<li><a href="#">Баланс аккаунта</a></li>
-						<li class="active">
-							<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
-							<ul class="subnav">
-								<li class="active"><a href="#">Общие настройки</a></li>
-								<li><a href="#">Адреса</a></li>
-								<li><a href="#">Склады</a></li>
-								<li><a href="#">Дополнительные имена</a></li>
-								<li><a href="#">Партнёрская программа</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Тариф аккаунта</a></li>
-						<li><a href="#">Оповещения</a></li>
-						<li><a href="#">Тикеты</a></li>
-					</ul>
-				</div>
-				<div class="content">
-					<div class="content-top">
-						<h2>Общие настройки</h2>
+		<div class="settings">
+			<div class="acc-content">
+				<div class="container">
+					<div class="sidebar">
+						<ul class="acc-nav">
+							<li><a href="#">Баланс аккаунта</a></li>
+							<li class="active">
+								<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
+								<ul class="subnav">
+									<li class="active"><a href="#">Общие настройки</a></li>
+									<li><a href="#">Адреса</a></li>
+									<li><a href="#">Склады</a></li>
+									<li><a href="#">Дополнительные имена</a></li>
+									<li><a href="#">Партнёрская программа</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Тариф аккаунта</a></li>
+							<li><a href="#">Оповещения</a></li>
+							<li><a href="#">Тикеты</a></li>
+						</ul>
 					</div>
-					<div class="content-body">
-						<form class="settings-form" action="/">
-							<div class="section">
-								<div class="s-header">
-									<h5>Желаемый язык для уведомлений / подписки</h5>
-									<div class="change"><a href="#">Изменить<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
-								</div>
-								<div class="s-line">
-									<label>Выберите предпочитаемый язык для использования ShipUx</label>
-									<div class="toggle">
-										<span class="lang">Русский</span>
+					<div class="content">
+						<div class="content-top">
+							<h2>Общие настройки</h2>
+						</div>
+						<div class="content-body">
+							<form class="settings-form" action="/">
+								<div class="section">
+									<div class="s-header">
+										<h5>Желаемый язык для уведомлений / подписки</h5>
+										<div class="change"><a href="#">Изменить<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+									</div>
+									<div class="s-line">
+										<label>Выберите предпочитаемый язык для использования ShipUx</label>
+										<div class="toggle">
+											<span class="lang">Русский</span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="section">
-								<div class="s-header">
-									<h5>Получать рассылку?</h5>
-								</div>
-								<div class="s-line">
-									<label>Воспользуйтесь всеми возможностями ShipUx</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox1" class="ios-toggle" checked/>
-										<label for="checkbox1" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+								<div class="section">
+									<div class="s-header">
+										<h5>Получать рассылку?</h5>
+									</div>
+									<div class="s-line">
+										<label>Воспользуйтесь всеми возможностями ShipUx</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox1" class="ios-toggle" checked/>
+											<label for="checkbox1" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="section">
-								<div class="s-header">
-									<h5>Предпочтения для входящих посылок</h5>
-								</div>
-								<div class="s-line">
-									<label>Общее фото</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox2" class="ios-toggle" checked/>
-										<label for="checkbox2" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+								<div class="section">
+									<div class="s-header">
+										<h5>Предпочтения для входящих посылок</h5>
+									</div>
+									<div class="s-line">
+										<label>Общее фото</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox2" class="ios-toggle" checked/>
+											<label for="checkbox2" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
+									</div>
+									<div class="s-line">
+										<label>Запрос фотографии содержимого посылки</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox3" class="ios-toggle" />
+											<label for="checkbox3" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
+									</div>
+									<div class="s-line">
+										<label>Запрос детальных фотографий</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox4" class="ios-toggle" checked/>
+											<label for="checkbox4" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
+									</div>
+									<div class="s-line">
+										<label>Открыть посылку и заполнить таможенную декларацию</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox5" class="ios-toggle" checked/>
+											<label for="checkbox5" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
+									</div>
+									<div class="s-line">
+										<label>Другие инструкции</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox6" class="ios-toggle" checked/>
+											<label for="checkbox6" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
 									</div>
 								</div>
-								<div class="s-line">
-									<label>Запрос фотографии содержимого посылки</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox3" class="ios-toggle" />
-										<label for="checkbox3" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+								<div class="section">
+									<div class="s-header">
+										<h5>Журналы и письма</h5>
+									</div>
+									<div class="s-line">
+										<label>Что делать с журналами?</label>
+										<div class="toggle">
+											<select>
+												<option value="выбросить">выбросить</option>
+												<option value="оставить">оставить</option>
+											</select>
+										</div>
+									</div>
+									<div class="s-line">
+										<label>Что делать с письмами?</label>
+										<div class="toggle">
+											<select>
+												<option value="выбросить">выбросить</option>
+												<option value="оставить">оставить</option>
+											</select>
+										</div>
+									</div>
+									<button>Сохранить</button>
+									<div class="clear"></div>
+								</div>
+								<div class="section">
+									<div class="s-header">
+										<h5>Коммерческие инвойсы</h5>
+									</div>
+									<div class="s-line">
+										<label>Показывать доставку по коммерческим инвойсам (DHL, Fedex)</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox7" class="ios-toggle" checked/>
+											<label for="checkbox7" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
 									</div>
 								</div>
-								<div class="s-line">
-									<label>Запрос детальных фотографий</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox4" class="ios-toggle" checked/>
-										<label for="checkbox4" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+								<div class="section input-line">
+									<div class="s-header">
+										<h5>Редактирование данных</h5>
+										<div class="change"><a href="#">Изменить<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
 									</div>
-								</div>
-								<div class="s-line">
-									<label>Открыть посылку и заполнить таможенную декларацию</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox5" class="ios-toggle" checked/>
-										<label for="checkbox5" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+									<div class="s-input">
+										<label>Фамилия</label>
+										<span>Lightman</span>
 									</div>
-								</div>
-								<div class="s-line">
-									<label>Другие инструкции</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox6" class="ios-toggle" checked/>
-										<label for="checkbox6" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+									<div class="s-input">
+										<label>Имя</label>
+										<span>Julia</span>
 									</div>
-								</div>
-							</div>
-							<div class="section">
-								<div class="s-header">
-									<h5>Журналы и письма</h5>
-								</div>
-								<div class="s-line">
-									<label>Что делать с журналами?</label>
-									<div class="toggle">
-										<select>
-											<option value="выбросить">выбросить</option>
-											<option value="оставить">оставить</option>
-										</select>
+									<div class="s-input">
+										<label>Страна</label>
+										<span>Украина</span>
 									</div>
+									<div class="clear"></div>
 								</div>
-								<div class="s-line">
-									<label>Что делать с письмами?</label>
-									<div class="toggle">
-										<select>
-											<option value="выбросить">выбросить</option>
-											<option value="оставить">оставить</option>
-										</select>
+								<div class="section input-line edit">
+									<div class="s-header">
+										<h5>Редактирование данных</h5>
 									</div>
-								</div>
-								<button>Сохранить</button>
-								<div class="clear"></div>
-							</div>
-							<div class="section">
-								<div class="s-header">
-									<h5>Коммерческие инвойсы</h5>
-								</div>
-								<div class="s-line">
-									<label>Показывать доставку по коммерческим инвойсам (DHL, Fedex)</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox7" class="ios-toggle" checked/>
-										<label for="checkbox7" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+									<div class="s-input">
+										<label>Фамилия</label>
+										<input type="text" value="Lightman">
 									</div>
+									<div class="s-input">
+										<label>Имя</label>
+										<input type="text" value="Julia">
+									</div>
+									<div class="s-input">
+										<label>Страна</label>
+										<input type="text" value="Украина">
+									</div>
+									<button>Сохранить</button>
+									<div class="clear"></div>
 								</div>
-							</div>
-							<div class="section input-line">
-								<div class="s-header">
-									<h5>Редактирование данных</h5>
-									<div class="change"><a href="#">Изменить<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+								<div class="section input-line">
+									<div class="s-header">
+										<h5>Изменение email</h5>
+										<div class="change"><a href="#">Изменить<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+									</div>
+									<div class="clear"></div>
+									<div class="s-input">
+										<label>Текущий email</label>
+										<span>Vitalikskaletskiy@gmail.com</span>
+									</div>
+									<div class="s-input">
+										<label>Текущий email</label>
+										<span>Vitalikskaletskiy@gmail.com</span>
+									</div>
+									<div class="s-input">
+										<label>Повторить email</label>
+										<span>Vitalikskaletskiy@gmail.com</span>
+									</div>
+									<div class="clear"></div>
 								</div>
-								<div class="s-input">
-									<label>Фамилия</label>
-									<span>Lightman</span>
+								<div class="section input-line">
+									<div class="s-header">
+										<h5>Изменение пароля</h5>
+										<div class="change"><a href="#">Изменить<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+									</div>
+									<div class="clear"></div>
+									<div class="s-input">
+										<label>Текущий пароль</label>
+										<span>*********</span>
+									</div>
+									<div class="s-input">
+										<label>Новый пароль</label>
+										<span>*********</span>
+									</div>
+									<div class="s-input">
+										<label>Повторить пароль</label>
+										<span>*********</span>
+									</div>
+									<div class="clear"></div>
 								</div>
-								<div class="s-input">
-									<label>Имя</label>
-									<span>Julia</span>
-								</div>
-								<div class="s-input">
-									<label>Страна</label>
-									<span>Украина</span>
-								</div>
-								<div class="clear"></div>
-							</div>
-							<div class="section input-line edit">
-								<div class="s-header">
-									<h5>Редактирование данных</h5>
-								</div>
-								<div class="s-input">
-									<label>Фамилия</label>
-									<input type="text" value="Lightman">
-								</div>
-								<div class="s-input">
-									<label>Имя</label>
-									<input type="text" value="Julia">
-								</div>
-								<div class="s-input">
-									<label>Страна</label>
-									<input type="text" value="Украина">
-								</div>
-								<button>Сохранить</button>
-								<div class="clear"></div>
-							</div>
-							<div class="section input-line">
-								<div class="s-header">
-									<h5>Изменение email</h5>
-									<div class="change"><a href="#">Изменить<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
-								</div>
-								<div class="clear"></div>
-								<div class="s-input">
-									<label>Текущий email</label>
-									<span>Vitalikskaletskiy@gmail.com</span>
-								</div>
-								<div class="s-input">
-									<label>Текущий email</label>
-									<span>Vitalikskaletskiy@gmail.com</span>
-								</div>
-								<div class="s-input">
-									<label>Повторить email</label>
-									<span>Vitalikskaletskiy@gmail.com</span>
-								</div>
-								<div class="clear"></div>
-							</div>
-							<div class="section input-line">
-								<div class="s-header">
-									<h5>Изменение пароля</h5>
-									<div class="change"><a href="#">Изменить<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
-								</div>
-								<div class="clear"></div>
-								<div class="s-input">
-									<label>Текущий пароль</label>
-									<span>*********</span>
-								</div>
-								<div class="s-input">
-									<label>Новый пароль</label>
-									<span>*********</span>
-								</div>
-								<div class="s-input">
-									<label>Повторить пароль</label>
-									<span>*********</span>
-								</div>
-								<div class="clear"></div>
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

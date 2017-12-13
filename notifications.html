@@ -111,98 +111,100 @@
 				</div>
 			</div>
 		</header>
-		<div class="acc-content">
-			<div class="container">
-				<div class="sidebar">
-					<ul class="acc-nav">
-						<li><a href="#">Баланс аккаунта</a></li>
-						<li>
-							<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
-							<ul class="subnav">
-								<li><a href="#">Общие настройки</a></li>
-								<li><a href="#">Адреса</a></li>
-								<li><a href="#">Склады</a></li>
-								<li><a href="#">Дополнительные имена</a></li>
-								<li><a href="#">Партнёрская программа</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Тариф аккаунта</a></li>
-						<li class="active"><a href="#">Оповещения</a></li>
-						<li><a href="#">Тикеты</a></li>
-					</ul>
-				</div>
-				<div class="content">
-					<div class="content-top">
-						<h2>Оповещения</h2>
+		<div class="notifications">
+			<div class="acc-content">
+				<div class="container">
+					<div class="sidebar">
+						<ul class="acc-nav">
+							<li><a href="#">Баланс аккаунта</a></li>
+							<li>
+								<a href="#">Настройка аккаунта <i class="fa fa-caret-down"></i></a>
+								<ul class="subnav">
+									<li><a href="#">Общие настройки</a></li>
+									<li><a href="#">Адреса</a></li>
+									<li><a href="#">Склады</a></li>
+									<li><a href="#">Дополнительные имена</a></li>
+									<li><a href="#">Партнёрская программа</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Тариф аккаунта</a></li>
+							<li class="active"><a href="#">Оповещения</a></li>
+							<li><a href="#">Тикеты</a></li>
+						</ul>
 					</div>
-					<div class="content-body">
-						<form class="settings-form" action="/">
-							<div class="section">
-								<div class="s-header">
-									<h5>Настройка показа оповещений - Тип 1</h5>
-								</div>
-								<div class="s-line">
-									<label>Проблемы в доставке</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox2" class="ios-toggle" checked/>
-										<label for="checkbox2" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+					<div class="content">
+						<div class="content-top">
+							<h2>Оповещения</h2>
+						</div>
+						<div class="content-body">
+							<form class="settings-form" action="/">
+								<div class="section">
+									<div class="s-header">
+										<h5>Настройка показа оповещений - Тип 1</h5>
+									</div>
+									<div class="s-line">
+										<label>Проблемы в доставке</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox2" class="ios-toggle" checked/>
+											<label for="checkbox2" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
+									</div>
+									<div class="s-line">
+										<label>Отчёт о фотографии содержимого посылки</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox3" class="ios-toggle" />
+											<label for="checkbox3" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
+									</div>
+									<div class="s-line">
+										<label>Запрос детальных фотографий</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox4" class="ios-toggle" checked/>
+											<label for="checkbox4" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
+									</div>
+									<div class="s-line">
+										<label>Заполнение таможенной декларации</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox5" class="ios-toggle" checked/>
+											<label for="checkbox5" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
+									</div>
+									<div class="s-line">
+										<label>Рекоммендации</label>
+										<div class="toggle">
+											<input type="checkbox" name="checkbox" id="checkbox6" class="ios-toggle" checked/>
+											<label for="checkbox6" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+										</div>
 									</div>
 								</div>
-								<div class="s-line">
-									<label>Отчёт о фотографии содержимого посылки</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox3" class="ios-toggle" />
-										<label for="checkbox3" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+								<div class="section">
+									<div class="s-header">
+										<h5>Настройка показа оповещений - Тип 2</h5>
 									</div>
-								</div>
-								<div class="s-line">
-									<label>Запрос детальных фотографий</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox4" class="ios-toggle" checked/>
-										<label for="checkbox4" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+									<div class="s-line">
+										<label>Какое-то оповещение с дропдауном 1</label>
+										<div class="toggle">
+											<select>
+												<option value="выбросить">выбросить</option>
+												<option value="оставить">оставить</option>
+											</select>
+										</div>
 									</div>
-								</div>
-								<div class="s-line">
-									<label>Заполнение таможенной декларации</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox5" class="ios-toggle" checked/>
-										<label for="checkbox5" class="checkbox-label" data-off="Нет" data-on="Да"></label>
+									<div class="s-line">
+										<label>Какое-то оповещение с дропдауном 2</label>
+										<div class="toggle">
+											<select>
+												<option value="выбросить">выбросить</option>
+												<option value="оставить">оставить</option>
+											</select>
+										</div>
 									</div>
+									<button>Сохранить</button>
+									<div class="clear"></div>
 								</div>
-								<div class="s-line">
-									<label>Рекоммендации</label>
-									<div class="toggle">
-										<input type="checkbox" name="checkbox" id="checkbox6" class="ios-toggle" checked/>
-										<label for="checkbox6" class="checkbox-label" data-off="Нет" data-on="Да"></label>
-									</div>
-								</div>
-							</div>
-							<div class="section">
-								<div class="s-header">
-									<h5>Настройка показа оповещений - Тип 2</h5>
-								</div>
-								<div class="s-line">
-									<label>Какое-то оповещение с дропдауном 1</label>
-									<div class="toggle">
-										<select>
-											<option value="выбросить">выбросить</option>
-											<option value="оставить">оставить</option>
-										</select>
-									</div>
-								</div>
-								<div class="s-line">
-									<label>Какое-то оповещение с дропдауном 2</label>
-									<div class="toggle">
-										<select>
-											<option value="выбросить">выбросить</option>
-											<option value="оставить">оставить</option>
-										</select>
-									</div>
-								</div>
-								<button>Сохранить</button>
-								<div class="clear"></div>
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
