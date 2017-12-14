@@ -23,7 +23,7 @@
 <body>
 
 	<div id="wrapper">
-		<header>
+		<header class="has_link">
 			<div class="container">
 				<div class="header-top">
 					<div class="header-calc">
@@ -42,10 +42,13 @@
 					</div>
 				</div>
 				<div class="header-bottom row">
-					<div class="col-lg-2 col-md-2 col-sm-3 shipux-logo">
-						<a href="/"><img src="img/shipux_logo_yellow.svg" alt="logo"></a>
+					<div class="col-lg-2 col-md-2 col-sm-6 col-xs-9 shipux-logo">
+						<a href="/">
+							<img src="img/shipux_logo_yellow.svg" alt="logo">
+							<span class="logo-text"><i class="fa fa-caret-left"></i>Все настройки</span>
+						</a>
 					</div>
-					<div class="col-lg-10 col-md-10  col-sm-9 shipux-right">
+					<div class="col-lg-10 col-md-10 col-sm-9 shipux-right">
 						<div class="shipux-login">
 							<div class="shipux-notifications">
 								<i class="fa fa-bell" aria-hidden="true"></i>
@@ -108,6 +111,7 @@
 						</ul>
 						<div class="clear"></div>
 					</div>
+					<div class="shipux-mobile col-sm-6 col-xs-3"><span><img src="img/mobile-drop.png" alt="mobile drop"></span></div>
 				</div>
 			</div>
 		</header>
@@ -137,49 +141,97 @@
 							<h2>Тариф аккаунта</h2>
 						</div>
 						<div class="content-body">
-							<div class="line type">
-								<div class="header">
-									<h5>Текущий тип аккаунта</h5>
-									<div class="change"><a href="#">Изменить пакет<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
-								</div>
-								<div class="body">
-									<div>Виртуальный почтовый ящик</div>
-									<div>
-										<span>Период действия</span>
+							<div class="desktop">
+								<div class="line type">
+									<div class="header">
+										<h5>Текущий тип аккаунта</h5>
+										<div class="change"><a href="#">Изменить пакет<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+									</div>
+									<div class="body">
+										<div>Виртуальный почтовый ящик</div>
 										<div>
-											<span>с</span>Мар. 15, 2017<br>
-											<span>по</span>Апр. 15, 2017
+											<span>Период действия</span>
+											<div>
+												<span>с</span>Мар. 15, 2017<br>
+												<span>по</span>Апр. 15, 2017
+											</div>
+										</div>
+										<div>
+											<span>Стоимость</span>
+											<div>$4.17 / мес.</div>
+										</div>
+										<div>
+											<span>Коммисия</span>
+											<div>$10.00 / единоразово</div>
 										</div>
 									</div>
-									<div>
-										<span>Стоимость</span>
-										<div>$4.17 / мес.</div>
+								</div>
+								<div class="line storage">
+									<div class="header">
+										<h5>Место для хранения</h5>
+										<div class="change"><a href="#">Добавить место<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
 									</div>
-									<div>
-										<span>Коммисия</span>
-										<div>$10.00 / единоразово</div>
+									<div class="body">
+										<div>Фотографии / Информация</div>
+										<div>
+											<span>Бесплатно</span>
+											<div>150 Mb</div>
+										</div>
+										<div>
+											<span>Использовано</span>
+											<div>78 Mb</div>
+										</div>
+										<div>
+											<span>Осталось</span>
+											<div>72 Mb</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="line storage">
-								<div class="header">
-									<h5>Место для хранения</h5>
-									<div class="change"><a href="#">Добавить место<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
+							<div class="mobile">
+								<div class="line type">
+									<div class="header">
+										<h5>Текущий тип аккаунта</h5>
+									</div>
+									<div class="body">
+										<div>Виртуальный почтовый ящик</div>
+										<div>
+											<span>Период действия</span>
+											<div>
+												<span>15/04/17</span> - <span>15/05/17</span>
+											</div>
+										</div>
+										<div>
+											<span>Стоимость</span>
+											<div>$4.17 / мес.</div>
+										</div>
+										<div>
+											<span>Коммисия</span>
+											<div>$10.00 / единоразово</div>
+										</div>
+									</div>
+									<div class="change"><a href="#">Изменить пакет<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
 								</div>
-								<div class="body">
-									<div>Фотографии / Информация</div>
-									<div>
-										<span>Бесплатно</span>
-										<div>150 Mb</div>
+								<div class="line storage">
+									<div class="header">
+										<h5>Место для хранения</h5>
 									</div>
-									<div>
-										<span>Использовано</span>
-										<div>78 Mb</div>
+									<div class="body">
+										<div>Фотографии / Информация</div>
+										<div>
+											<span>Бесплатно</span>
+											<div>150 Mb</div>
+										</div>
+										<div>
+											<span>Использовано</span>
+											<div>78 Mb</div>
+										</div>
+										<div>
+											<span>Осталось</span>
+											<div>72 Mb</div>
+										</div>
 									</div>
-									<div>
-										<span>Осталось</span>
-										<div>72 Mb</div>
-									</div>
+									<div class="change"><a href="#">Добавить место<i class="fa fa-caret-right" aria-hidden="true"></i></a></div>
 								</div>
 							</div>
 						</div>

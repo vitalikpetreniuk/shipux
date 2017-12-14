@@ -4661,6 +4661,8 @@ ul {
   border-bottom: 1px solid #cccccc; }
   .content .refill-amount h5 {
     margin-bottom: 25px; }
+  .content .refill-amount h5 + div {
+    overflow: hidden; }
   .content .refill-amount .jq-selectbox {
     float: left;
     display: block;
@@ -4701,6 +4703,7 @@ ul {
   .content .refill-amount .jq-selectbox + input {
     outline: none;
     display: block;
+    float: left;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0 10px;
@@ -5925,6 +5928,9 @@ ul {
 .ticket h5 {
   margin: 20px 0 30px; }
 
+.tariff .mobile {
+  display: none; }
+
 .tariff .line {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -5934,21 +5940,21 @@ ul {
     margin-bottom: 25px; }
     .tariff .line .header h5 {
       float: left; }
-    .tariff .line .header .change {
-      float: right; }
-      .tariff .line .header .change a {
-        display: block;
-        color: #fed329;
-        font-family: 'Blogger_SansBold', sans-serif;
-        font-size: 17px;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-decoration: none !important;
-        height: 29px;
-        line-height: 33px; }
-        .tariff .line .header .change a i {
-          display: inline-block;
-          padding-left: 15px; }
+  .tariff .line .change {
+    float: right; }
+    .tariff .line .change a {
+      display: block;
+      color: #fed329;
+      font-family: 'Blogger_SansBold', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none !important;
+      height: 29px;
+      line-height: 33px; }
+      .tariff .line .change a i {
+        display: inline-block;
+        padding-left: 15px; }
   .tariff .line .body {
     display: -webkit-box;
     display: -webkit-flex;

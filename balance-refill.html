@@ -22,7 +22,7 @@
 </head>
 <body>
 	<div id="wrapper">
-		<header>
+		<header class="has_link">
 			<div class="container">
 				<div class="header-top">
 					<div class="header-calc">
@@ -41,8 +41,11 @@
 					</div>
 				</div>
 				<div class="header-bottom row">
-					<div class="col-lg-2 col-md-2 col-sm-3 shipux-logo">
-						<a href="/"><img src="img/shipux_logo_yellow.svg" alt="logo"></a>
+					<div class="col-lg-2 col-md-2 col-sm-6 col-xs-9 shipux-logo">
+						<a href="/">
+							<img src="img/shipux_logo_yellow.svg" alt="logo">
+							<span class="logo-text"><i class="fa fa-caret-left"></i>Баланс аккаунта</span>
+						</a>
 					</div>
 					<div class="col-lg-10 col-md-10  col-sm-9 shipux-right">
 						<div class="shipux-login">
@@ -107,10 +110,11 @@
 						</ul>
 						<div class="clear"></div>
 					</div>
+					<div class="shipux-mobile col-sm-6 col-xs-3"><span><img src="img/mobile-drop.png" alt="mobile drop"></span></div>
 				</div>
 			</div>
 		</header>
-		<div class="refill">
+		<div class="balance refill">
 			<div class="acc-content">
 				<div class="container">
 					<div class="sidebar">
@@ -133,19 +137,21 @@
 					</div>
 					<div class="content">
 						<div class="content-top">
-							<h2><i class="fa fa-angle-left"></i>Балланс аккаунта:<span>$72.17</span></h2>
+							<h2><span><i class="fa fa-angle-left"></i>Балланс аккаунта:</span><span>$72.17</span></h2>
 							<div class="debt">Задолженность: -$27.00</div>
 						</div>
 						<div class="content-body">
 							<form action="/">
 								<div class="refill-amount">
 									<h5>Сумма пополнения</h5>
-									<select name="refill" id="refill">
-										<option value="$">$</option>
-										<option value="€">€</option>
-										<option value="£">£</option>
-									</select>
-									<input type="text" placeholder="20.00">
+									<div>
+										<select name="refill" id="refill">
+											<option value="$">$</option>
+											<option value="€">€</option>
+											<option value="£">£</option>
+										</select>
+										<input type="text" placeholder="20.00">
+									</div>
 								</div>
 								<div class="payment-method">
 									<h5>Способ оплаты</h5>
