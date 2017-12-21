@@ -4,6 +4,48 @@ $(function() {
     var weight_qua;
     var price_qua;
 
+    $('.header-lang').find('.lang').on('click', function () {
+        $('.header-lang').toggleClass('open');
+        $('.header-lang').find('ul').fadeToggle('fast');
+    });
+
+    $('.content .settings-form .section:nth-child(1) .change').on('click', function () {
+        $('.content .settings-form .section:nth-child(1)').find('.section-change').slideToggle('fast');
+    });
+
+    $('.content .settings-form .section.input-line .change').on('click', function (e) {
+        e.preventDefault();
+        $(this).parent().parent().find('.line.edit').slideToggle('fast');
+    });
+
+
+    $('.expected-top .top-right a').on('click', function (e) {
+        e.preventDefault();
+        $('.expected-add').addClass('open');
+    });
+    $('.expected-add .cancel').on('click', function (e) {
+        e.preventDefault();
+        $('.expected-add').removeClass('open');
+    });
+
+    $('.names .content-top a').on('click', function (e) {
+        e.preventDefault();
+        $('.names-add').addClass('open');
+    });
+    $('.names-add .cancel').on('click', function (e) {
+        e.preventDefault();
+        $('.names-add').removeClass('open');
+    });
+
+    $('.address .content-top a').on('click', function (e) {
+        e.preventDefault();
+        $('.address-add').addClass('open');
+    });
+    $('.address-add .cancel').on('click', function (e) {
+        e.preventDefault();
+        $('.address-add').removeClass('open');
+    });
+
     if($('#fullpage').length && $(window).width()>1279)
     {
         $('#fullpage').fullpage();
