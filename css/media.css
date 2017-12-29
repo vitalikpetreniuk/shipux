@@ -15,6 +15,10 @@
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
+  #blue-sky .blue-images,
+  #blue-sky .blue-title {
+    height: -webkit-calc(100vh - 109px);
+    height: calc(100vh - 109px); }
   #step1 .step1-image,
   #step1 .step1-info,
   #step2 .step2-image,

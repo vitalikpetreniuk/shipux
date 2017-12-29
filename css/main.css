@@ -555,7 +555,7 @@ ul {
       #blue-sky .blue-title .in-bt .start-now {
         display: block;
         width: 246px;
-        height: 70px;
+        paddinga: 18px 0 15px;
         text-align: center;
         -webkit-border-radius: 35px;
                 border-radius: 35px;
@@ -564,10 +564,11 @@ ul {
         font-family: 'Blogger_SansBold', sans-serif;
         font-size: 25px;
         font-weight: 700;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-decoration: none; }
   #blue-sky .blue-images {
-    height: -webkit-calc(100vh - 109px);
-    height: calc(100vh - 109px);
+    height: -webkit-calc(100vh - 147px);
+    height: calc(100vh - 147px);
     position: relative; }
     #blue-sky .blue-images .plane {
       position: absolute;
@@ -1039,7 +1040,8 @@ ul {
     font-size: 17px;
     font-weight: 500;
     line-height: 45px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-decoration: none; }
 
 /* PROCESS ---------------------------------------------------------------------------------------------------------- */
 .process-top {
@@ -3392,7 +3394,8 @@ ul {
       font-size: 17px;
       line-height: 48px;
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-decoration: none; }
 
 .stock-body {
   padding: 35px 0 70px;
